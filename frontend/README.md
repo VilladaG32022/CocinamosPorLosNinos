@@ -1,5 +1,3 @@
-<h1>FinalProjectFrontEnd</h1>
-<hr><p>This project is developed at ITS Villada School</p><h2>General Information</h2>
 <hr><ul>
 <li>In the project directory, you can run:</li>
 </ul>
