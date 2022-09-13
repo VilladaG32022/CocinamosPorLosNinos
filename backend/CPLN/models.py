@@ -10,6 +10,7 @@ from django.db import models
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 
+
 class Address(models.Model):
     #id_addres = models.IntegerField(unique=True, null=False, blank=False)
     street_1 = models.CharField(max_length=255, blank=True, null=True)
@@ -47,7 +48,6 @@ class Ingredients(models.Model):
     last_update = models.DateTimeField(auto_now_add=True)
 
 
-
 class Inventory(models.Model):
     product = models.ForeignKey('Product', on_delete=models.CASCADE)
     warehouse = models.ForeignKey('Warehouse', on_delete=models.CASCADE)
@@ -55,11 +55,9 @@ class Inventory(models.Model):
     last_update = models.DateTimeField(auto_now_add=True)
 
 
-
 class Lunch(models.Model):
     description = models.CharField(unique=True, max_length=255)
     last_update = models.DateTimeField(auto_now_add=True)
-
 
 
 class Lunchroom(models.Model):
@@ -67,7 +65,6 @@ class Lunchroom(models.Model):
     address = models.ForeignKey(Address, on_delete=models.CASCADE)
     warehouse = models.ForeignKey('Warehouse', on_delete=models.CASCADE)
     last_update = models.DateTimeField(auto_now_add=True)
-
 
 
 class Neighborhood(models.Model):
@@ -90,6 +87,7 @@ class Person(models.Model):
     def __str__(self):
         return str(self.first_name + ' ' + self.last_name)
 
+
 class Product(models.Model):
     description = models.CharField(max_length=255)
     brand = models.CharField(max_length=100)
@@ -103,11 +101,9 @@ class ProductDetail(models.Model):
     last_update = models.DateTimeField(auto_now_add=True)
 
 
-
 class Role(models.Model):
     description = models.CharField(max_length=50)
     last_update = models.DateTimeField(auto_now_add=True)
-
 
 
 class Userpage(models.Model):
@@ -117,13 +113,11 @@ class Userpage(models.Model):
     last_update = models.DateTimeField(auto_now_add=True)
 
 
-
 class Volunteer(models.Model):
     person = models.ForeignKey(Person, on_delete=models.CASCADE)
     role = models.ForeignKey(Role, on_delete=models.CASCADE)
     lunchroom = models.ForeignKey(Lunchroom, on_delete=models.CASCADE)
     last_update = models.DateTimeField(auto_now_add=True)
-
 
 
 class Warehouse(models.Model):
@@ -132,13 +126,11 @@ class Warehouse(models.Model):
     last_update = models.DateTimeField(auto_now_add=True)
 
 
-
 class WeeklyMenu(models.Model):
     variety = models.CharField(max_length=50, blank=True, null=True)
     lunch = models.ForeignKey(Lunch, on_delete=models.CASCADE)
     lunchroom = models.ForeignKey(Lunchroom, on_delete=models.CASCADE)
     last_update = models.DateTimeField(auto_now_add=True)
-
 
 
 class Withdrawal(models.Model):
