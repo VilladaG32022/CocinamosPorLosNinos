@@ -18,13 +18,13 @@ const routesClient = [
     {
         component:Donation,
         layout:BasicLayout,
-        path:"/donation",
+        path:"/donacion",
         
     },
     {
         component:Volunteer,
         layout:BasicLayout,
-        path:"/volunteer",
+        path:"/voluntario",
         
     },
     {
@@ -36,7 +36,7 @@ const routesClient = [
     {
         component:NormalUser,
         layout:UserLayout,
-        path:"/user",
+        path:"/usuario",
         
     },
 ];
