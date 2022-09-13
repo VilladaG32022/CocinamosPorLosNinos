@@ -1,24 +1,25 @@
 import React from "react";
 import NavScroll from "../components/Navbar/Navbar";
 import FooterSection from "../components/Footer/Footer";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function BasicLayout(props) {
-  console.log(props)
+  console.log(props);
 
-  const {children} = props;
+  const { children } = props;
 
-  return(
+  return (
     <>
       <Row>
-        <Col> 
+        <Col>
           <NavScroll />
         </Col>
       </Row>
       <Row>{children}</Row>
-      <Row><FooterSection/></Row>
+      <Row>
+        <FooterSection />
+      </Row>
     </>
   );
 }
