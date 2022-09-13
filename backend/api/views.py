@@ -7,11 +7,13 @@ from django.http.response import JsonResponse
 
 from rest_framework.views import APIView
 
+
 @api_view(['GET'])
 def getUserPage(request):
     users = Userpage.objects.all()
     serializer = UserPageSerializer(users, many=True)
     return Response(serializer.data)
+
 
 class ToVolunteer(APIView):
     def put(self, request, pk):
@@ -28,7 +30,7 @@ class ToVolunteer(APIView):
 
     def Delete(self, request, pk):
         if request.method == 'DELETE':
-        #jd = json.loads(request.body)
+            #jd = json.loads(request.body)
             person = Person.objects.filter(pk=pk).first()
             if person != None:
                 person.delete()
@@ -37,8 +39,8 @@ class ToVolunteer(APIView):
                 datos = {'message': "Company not found..."}
             return JsonResponse(datos)
 
-    def post(self,request,pk):
-        serializeobj=PersonSerializer(data=request.data)
+    def post(self, request, pk):
+        serializeobj = PersonSerializer(data=request.data)
         if serializeobj.is_valid():
             serializeobj.save()
             return Response("Person created")
@@ -46,13 +48,13 @@ class ToVolunteer(APIView):
 
 
 class PersonTable(APIView):
-    def get(self,request):
+    def get(self, request):
         users = Person.objects.all()
         serializer = PersonSerializer(users, many=True)
         return Response(serializer.data)
-    
-    def post(self,request):
-        serializeobj=PersonSerializer(data=request.data)
+
+    def post(self, request):
+        serializeobj = PersonSerializer(data=request.data)
         if serializeobj.is_valid():
             serializeobj.save()
             return Response("Person created")

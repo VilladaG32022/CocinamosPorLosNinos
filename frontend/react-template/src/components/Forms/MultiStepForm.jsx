@@ -1,13 +1,6 @@
-import React from 'react';
-import Switch from '../FormSwitch/Switch';
+import React from "react";
+import Switch from "../FormSwitch/Switch";
 
-
-export default function MultiStepForm () {
-
-
-    return(
-        <Switch />
-    );
-
-
+export default function MultiStepForm() {
+  return <Switch />;
 }
