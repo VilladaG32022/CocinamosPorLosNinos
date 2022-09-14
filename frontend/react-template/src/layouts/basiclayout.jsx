@@ -1,5 +1,5 @@
 import React from "react";
-import NavScroll from "../components/Navbar/Navbar";
+import NavScroll from "../components/Navbar/navbar";
 import FooterSection from "../components/Footer/Footer";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

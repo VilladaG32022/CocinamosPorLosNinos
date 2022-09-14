@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import DailyCard from '../Cards/DailyCard/DailyCards';
-import '../Carousel/ControlledCarousel.css'
+import '../carousel/ControlledCarousel.css'
 
 
 const axios = require('axios').default;
