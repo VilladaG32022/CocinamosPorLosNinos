@@ -15,7 +15,8 @@ export const AboutSec =[
 
     {
         title:'Somos CPLN',
-        text:'Nos organizamos para poder cubrir la cuota básica de alimentación de muchos niños en diferentes zonas a través de comedores, centros vecinales, organizaciones y fundaciones. Nos unimos familias con ganas de ayudarnos a ayudar. Nuestro organigrama y roles está dividido en: Familias de voluntariado, Voluntarios de cocina, Voluntarios de gestión y donantes'
+        text:'Nos organizamos para poder cubrir la cuota básica de alimentación de muchos niños en diferentes zonas a través de comedores, centros vecinales, organizaciones y fundaciones. Nos unimos familias con ganas de ayudarnos a ayudar. Nuestro organigrama y roles está dividido en: Familias de voluntariado, Voluntarios de cocina, Voluntarios de gestión y donantes',
+        src: '/assets/Img/pic01.png'
     },
 
     {

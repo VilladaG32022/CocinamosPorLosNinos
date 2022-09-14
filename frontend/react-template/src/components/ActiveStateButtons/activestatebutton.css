@@ -7,7 +7,7 @@
   /*========== Colors ==========*/
   --first-color: #E8CA9E;
   --second-color: #77B3B8;
-  --button-color: #77B3B8;
+  --button-color: #ffa024;
   --button-color-alt: rgb(0, 56, 53);
   --title-color: rgb(242, 239, 235);
   --title-hover-color: #003835;
@@ -48,7 +48,7 @@
 .primary {
     margin-right: 20px !important;
     margin-left: 60px !important;
-    background-color: var(--first-color) !important; 
+    background-color: var(--button-color) !important; 
     border: none !important;
     border-radius: 15px !important;
     padding: 20px !important;

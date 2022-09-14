@@ -63,12 +63,14 @@
     background-color: var(--second-color);
     border-radius: 0 0 12px 12px !important;
     padding: 0px !important;
+    max-height: 190px;
 }
 
 .card__text{
     padding: 0px 20px 20px 20px;
     color: var(--text-color);
     margin-bottom: 30px;
+    max-height: 40px;
 }
 
 .card__title{

@@ -63,7 +63,7 @@
 }
 
 .carousel-control-prev-icon{
-    background-color: #77B3B8;
+    background-color: #4faf9a;
     border-radius: 20px;
     transition: .3s;
 }
@@ -74,7 +74,7 @@
 }
 
 .carousel-control-next-icon{
-    background-color: #77B3B8;
+    background-color: #4faf9a;
     border-radius: 20px;
     transition: .3s;
 }
