@@ -4,7 +4,7 @@
   
     /*========== Colors ==========*/
     --first-color: #E8CA9E;
-    --second-color: #77B3B8;
+    --second-color: #097d66;
     --button-color: #77B3B8;
     --button-color-alt: rgb(0, 56, 53);
     --title-color: rgb(242, 239, 235);
@@ -45,12 +45,12 @@
 
 .card{
     border: none !important;
-    border-radius: 20px !important;
+    border-radius: 12px !important;
     margin: 50px;
 }
 
 .card__img{
-    border-radius: 20px 20px 0 0 !important;
+    border-radius: 12px 12px 0 0 !important;
     height: 280px;
 }
 
@@ -60,16 +60,19 @@
 }
 
 .card__body{
-    background-color: var(--first-color);
-    border-radius: 0 0 20px 20px !important;
+    background-color: var(--second-color);
+    border-radius: 0 0 12px 12px !important;
+    padding: 0px !important;
 }
 
 .card__text{
+    padding: 0px 20px 20px 20px;
     color: var(--text-color);
     margin-bottom: 30px;
 }
 
 .card__title{
+    padding: 20px 20px 0 20px;
     color: var(--text-color);
     font-weight: 700;
 }
@@ -77,9 +80,10 @@
 .card__btn{
     background-color: var(--button-color) !important;
     border: none !important;
-    border-radius: 15px !important;
     padding: 20px !important;
     transition: .3s !important;
+    width: 100% !important;
+    border-radius: 0 0 12px 12px !important;
 }
 
 .card__btn:hover{
