@@ -44,10 +44,7 @@
   --z-fixed: 100;
 }
 
-.about__middle {
-=======
 .about__middle{
-
   margin: auto;
   align-items: center;
 }
