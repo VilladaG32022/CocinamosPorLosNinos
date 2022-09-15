@@ -1,20 +1,21 @@
 import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import SideBar from "../components/SideBar/SideBar";
 
 export default function UserLayout(props) {
-  console.log(props)
+  console.log(props);
 
-  const {children} = props;
+  const { children } = props;
 
-  return(
+  return (
     <>
       <Col>
-          <SideBar/>
+        <SideBar />
       </Col>
-      <Row><Col>{children}</Col></Row>
-      
+      <Row>
+        <Col>{children}</Col>
+      </Row>
     </>
   );
 }

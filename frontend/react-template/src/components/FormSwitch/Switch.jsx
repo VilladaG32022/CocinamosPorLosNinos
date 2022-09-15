@@ -13,8 +13,8 @@ function Switch() {
     lastName: "",
     dateOfBirth: "",
     email: "",
-    postCode:""
-  })
+    postCode: "",
+  });
 
   // function for going to next step by increasing step state by 1
   const nextStep = () => {
@@ -27,19 +27,18 @@ function Switch() {
   };
 
   // handling form input data by taking onchange value and updating our previous form data state
-  const handleInputData = input => e => {
+  const handleInputData = (input) => (e) => {
     // input value from the form
-    const {value } = e.target;
+    const { value } = e.target;
 
     //updating for data state taking previous state and then adding new value to create new object
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [input]: value
-  }));
-  }
+      [input]: value,
+    }));
+  };
 
-
-// javascript switch case to show different form in each step
+  // javascript switch case to show different form in each step
   switch (step) {
     // case 1 to show stepOne form and passing nextStep, prevStep, and handleInputData as handleFormData method as prop and also formData as value to the fprm
     case 1:
@@ -47,8 +46,12 @@ function Switch() {
         <div className="Switch">
           <Container>
             <Row>
-              <Col  md={{ span: 6, offset: 3 }} className="custom-margin">
-                <UserDetails nextStep={nextStep} handleFormData={handleInputData} values={formData} />
+              <Col md={{ span: 6, offset: 3 }} className="custom-margin">
+                <UserDetails
+                  nextStep={nextStep}
+                  handleFormData={handleInputData}
+                  values={formData}
+                />
               </Col>
             </Row>
           </Container>
@@ -60,8 +63,12 @@ function Switch() {
         <div className="Switch">
           <Container>
             <Row>
-              <Col  md={{ span: 6, offset: 3 }} className="custom-margin">
-                <AddressDetails prevStep={prevStep} handleFormData={handleInputData} values={formData} />
+              <Col md={{ span: 6, offset: 3 }} className="custom-margin">
+                <AddressDetails
+                  prevStep={prevStep}
+                  handleFormData={handleInputData}
+                  values={formData}
+                />
               </Col>
             </Row>
           </Container>
@@ -69,10 +76,7 @@ function Switch() {
       );
     // default case to show nothing
     default:
-      return (
-        <div className="Switch">
-        </div>
-      );
+      return <div className="Switch"></div>;
   }
 }
 
