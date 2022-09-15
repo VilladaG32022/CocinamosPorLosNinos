@@ -46,9 +46,6 @@
   --z-fixed: 100;
 }
 
-* {
-  font-family: var(--body-font);
-=======
 *{
   font-family: var(--body-font); 
 

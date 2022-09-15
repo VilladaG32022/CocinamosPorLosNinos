@@ -61,23 +61,6 @@
   background-color: var(--first-color);
   color: var(--text-color);
   margin-bottom: 100px;
-=======
-.header{
-    width: 100%;
-    background-color: var(--first-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    /*For animation dark mode*/
-    transition: .4s;
-  }
-  
-  .nav{
-    background-color: var(--first-color);
-    color: var(--text-color);
-    margin-bottom: 100px;
-
 }
 
 .nav__logo {
