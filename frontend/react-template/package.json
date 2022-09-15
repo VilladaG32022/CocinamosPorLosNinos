@@ -4,7 +4,9 @@
   "private": true,
   "proxy": "http://localhost:3000",
   "dependencies": {
-    "@mui/material": "^5.10.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.5",
     "@mui/styled-engine-sc": "^5.10.0",
     "@syncfusion/ej2-react-calendars": "^20.2.46",
     "@testing-library/jest-dom": "^5.16.4",

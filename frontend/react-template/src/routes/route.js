@@ -8,37 +8,37 @@ import BasicLayout from "../layouts/basiclayout";
 import Layout from "../layouts/layout"
 
 
-import {links} from '../utils/constants'
+import { links } from '../utils/constants'
 
 const routesClient = [
 
     {
-        component:Home,
-        layout:BasicLayout,
-        path:links.HOME,
-        
+        component: Home,
+        layout: BasicLayout,
+        path: links.HOME,
+
     },
 
     {
-        component:Donation,
-        layout:Layout,
-        path:links.DONATE,
-        
+        component: Donation,
+        layout: Layout,
+        path: links.DONATE,
+
     },
     {
-        component:Volunteer,
-        layout:Layout,
-        path:links.VOLUNTEER,
-        
+        component: Volunteer,
+        layout: Layout,
+        path: links.VOLUNTEER,
+
     },
     {
-        component:LogIn,
-        layout:Layout,
-        path:links.LOGIN,
-        
+        component: LogIn,
+        layout: Layout,
+        path: links.LOGIN,
+
     },
 ];
-const routes =[...routesClient];
+const routes = [...routesClient];
 
 export default routes;
 
