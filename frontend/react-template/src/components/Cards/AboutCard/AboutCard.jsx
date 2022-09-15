@@ -11,15 +11,17 @@ export default function AboutCard(){
 
       {AboutSec.map(i => (
         <>
-     <MDBCardImage className="CardImage" overlay src={i.scr} alt='...' />
-      <MDBCardOverlay>
-        <div className="about__middle">
-          <MDBCardTitle className="about__card__title">{i.title}</MDBCardTitle>
-          <MDBCardText className="about__card__text">
-            {i.text}
-          </MDBCardText>
-        </div>
-      </MDBCardOverlay>
+            <MDBCardImage className="CardImage" overlay src={i.src} alt=''>
+
+            </MDBCardImage>
+              <div className="about__middle">
+                <MDBCardTitle className="about__card__title">{i.title}</MDBCardTitle>
+                <MDBCardText className="about__card__text">
+                  {i.text}
+                </MDBCardText>
+              </div>
+          <MDBCardOverlay>
+          </MDBCardOverlay>
 
         </>
       ))}
