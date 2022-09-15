@@ -1,3 +1,4 @@
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -44,6 +45,9 @@
 }
 
 .about__middle {
+=======
+.about__middle{
+
   margin: auto;
   align-items: center;
 }

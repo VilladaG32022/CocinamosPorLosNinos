@@ -76,3 +76,37 @@
   border-radius: 20px;
   transition: 0.3s;
 }
+=======
+.carousel__items {
+  display: inline-block;
+}
+
+.a {
+  display: inline;
+}
+
+.cardcontainer {
+  display: flex;
+}
+
+.carousel-control-prev {
+  width: 50px !important;
+  margin-left: 12px;
+}
+
+.carousel-control-prev-icon {
+  background-color: #77b3b8;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.carousel-control-next {
+  width: 50px !important;
+  margin-right: 12px;
+}
+
+.carousel-control-next-icon {
+  background-color: #77b3b8;
+  border-radius: 20px;
+  transition: 0.3s;
+}

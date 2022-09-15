@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
 
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -55,6 +56,10 @@
 
 .login__form {
   padding: 30px 30px 10px 30px;
+=======
+.login__form{
+    padding: 30px 30px 10px 30px;
+
 }
 
 .login__title {

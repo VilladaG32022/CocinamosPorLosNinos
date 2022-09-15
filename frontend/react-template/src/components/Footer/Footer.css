@@ -1,8 +1,16 @@
+
 .footer {
   background-color: #e8ca9e;
   margin-top: 100px;
   padding-top: 0;
   color: #f2efeb;
+=======
+.footer{
+    background-color: #E8CA9E;
+    margin-top: 100px;
+    padding-top: 0;
+    color: #F2EFEB;
+
 }
 
 .footer__row {

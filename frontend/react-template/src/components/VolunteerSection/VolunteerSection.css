@@ -47,9 +47,10 @@
 
 * {
   font-family: var(--body-font);
+=======
+*{
+  font-family: var(--body-font); 
 }
-
-/*=============== VOLUNTEERING ===============*/
 
 .volunteer__container {
   padding: 7% 25%;
