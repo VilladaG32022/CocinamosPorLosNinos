@@ -7,9 +7,9 @@
     --second-color: #77B3B8;
     --button-color: #77B3B8;
     --button-color-alt: rgb(0, 56, 53);
-    --title-color: rgb(242, 239, 235);
+    --title-color: rgb(0, 0, 0);
     --title-hover-color: #003835;
-    --text-color: #F2EFEB;
+    --text-color: #000000;
     --text-color-light: hsl(0, 0%, 55%);
     --body-color: hsl(0, 22%, 90%);
     --container-color: #fff;

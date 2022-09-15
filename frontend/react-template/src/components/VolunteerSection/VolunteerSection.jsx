@@ -14,7 +14,7 @@ export default function VolunteerSection(){
                             <h1 className="volunteer__title__bold">{VolunteerSec.title}</h1>
                             <p className="volunteer__description">
                             {VolunteerSec.text}</p>
-                            <Button className="volunteer__btn" href={links.volunteer} variant="primary">INSCRIBITE!</Button>
+                            <Button className="volunteer__btn" href={links.VOLUNTEER} variant="primary">INSCRIBITE!</Button>
                         </div>11
                     </div>
                 <div className="separator"></div>

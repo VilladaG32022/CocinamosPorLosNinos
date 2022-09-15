@@ -3,12 +3,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../Navbar/navbar.css';
 import logo_color from '../../assets/Img/logo_color.png';
+
+import { links } from '../../utils/constants';
 export default function NavScroll(){
 
     return (
         <div className="fixed-top">
             <Navbar className="nav" expand="lg">
-                    <Navbar.Brand href="/#home_section"><img src={logo_color} className="nav__logo"alt="logo" /></Navbar.Brand>
+                    <Navbar.Brand href={ links.HOME}><img src={logo_color} className="nav__logo"alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>

@@ -1,4 +1,7 @@
 import pic01 from '../assets/Img/pic01.jpg';
+import pic02 from '../assets/Img/pic02.jpg';
+import pic03 from '../assets/Img/pic03.jpg';
+import pic04 from '../assets/Img/pic04.jpg';
 
 export const links ={
     HOME: '/',
@@ -23,18 +26,21 @@ export const AboutSec =[
 
     {
         title:'Que hacemos',
-        text:'Desarrollamos Menús que podemos cocinar en diferentes casas de las familias participantes. Se determina una célula de trabajo la que se organiza según necesidad y disponibilidad de los integrantes. Cada menú tiene un desarrollo de receta, ingredientes y cocción para luego sistematizar el embalaje y envío al destino. Cada uno de los menús tiene aportes de carnes y vegetales para cubrir una dieta lo mas completa posible en cada entrega'
+        text:'Desarrollamos Menús que podemos cocinar en diferentes casas de las familias participantes. Se determina una célula de trabajo la que se organiza según necesidad y disponibilidad de los integrantes. Cada menú tiene un desarrollo de receta, ingredientes y cocción para luego sistematizar el embalaje y envío al destino. Cada uno de los menús tiene aportes de carnes y vegetales para cubrir una dieta lo mas completa posible en cada entrega',
+        src: pic02
     },
 
 
     {
         title:'Servicios',
         text:'Toda nuestra comunidad de familias colabora y brinda sus servicios para que se logren los objetivos de la organización entre los que contamos: Apoyo alimentario a niños de diferentes zonas de Córdoba. Ayuda en reparación o refuncionalización de comedores. Entrega de elementos para poder alimentar a los niños. Generación de charlas informativas a familias e integrantes del equipo. Charlas informativas a organizadores comunitarios de comedores, clubres capillas, etc ',
+        src: pic03
     },
 
     {
         title:'Contacto',
         text: 'Tu interés nos hace más fuertes y nos ayudará a que muchos chicos crezcan y se desarrollen. Esperamos tu consulta.',
+        src: pic04
     },    
 ]
 
