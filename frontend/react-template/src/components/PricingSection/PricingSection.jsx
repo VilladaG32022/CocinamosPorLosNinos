@@ -8,7 +8,7 @@ export default function PricingContainer(props) {
     <MDBContainer>
       <MDBRow className="donate__row">
         <MDBCol>
-          <Card btntext="Paga otario" />
+          <Card btntext="Ir a MercadoPago" />
         </MDBCol>
       </MDBRow>
     </MDBContainer>

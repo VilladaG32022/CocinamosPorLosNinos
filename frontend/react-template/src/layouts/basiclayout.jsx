@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 export default function BasicLayout(props) {
-  console.log(props);
 
   const { children } = props;
 

@@ -9,13 +9,13 @@ export default function App(props) {
   return (
     <MDBCard>
       <div className="donate__header">
-        {PricingSec.map((i) => (
+        {PricingSec.map((label) => (
           <div>
             <MDBCardTitle className="donate__title">
-              {i.title ? i.title : "Dona"}
+              {label.title ? label.title : "Dona"}
             </MDBCardTitle>
             <div className="donate__div">
-              <MDBCardText className="donate__text">{i.text}</MDBCardText>
+              <MDBCardText className="donate__text">{label.text}</MDBCardText>
               <Button variant="contained">
                 {btntext}
                 <MDBIcon fas icon="credit-card" />

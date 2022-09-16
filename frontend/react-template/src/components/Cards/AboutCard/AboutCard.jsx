@@ -12,17 +12,19 @@ import { AboutSec } from "../../../utils/constants";
 export default function AboutCard() {
   return (
     <MDBCard background="dark" className="text-white">
-      {AboutSec.map((i) => (
+      {AboutSec.map((label) => (
         <>
           <MDBCard>
-            <MDBCardImage className="CardImage" src={i.src} alt="..." />
-            <div className="about__middle">
-              <MDBCardTitle className="about__card__title">
-                {i.title}
-              </MDBCardTitle>
-              <MDBCardText className="about__card__text">{i.text}</MDBCardText>
-            </div>
-          </MDBCard>
+            <div className="container">
+                  <MDBCardImage className="CardImage" src={label.src} alt="..." />
+                  <div className="about__middle">
+                    <MDBCardTitle className="about__card__title">
+                      {label.title}
+                    </MDBCardTitle>
+                    <MDBCardText className="about__card__text">{label.text}</MDBCardText>
+                  </div>
+                </div>
+            </MDBCard>
         </>
       ))}
     </MDBCard>
