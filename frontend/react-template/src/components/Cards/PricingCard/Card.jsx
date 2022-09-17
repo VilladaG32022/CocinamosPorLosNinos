@@ -1,29 +1,29 @@
 import React from "react";
-import {
-  MDBCard,
-  MDBCardTitle,
-  MDBCardText,
-  MDBBtn,
-  MDBCardOverlay,
-  MDBIcon,
-} from "mdb-react-ui-kit";
+import { MDBCard, MDBCardTitle, MDBCardText, MDBIcon } from "mdb-react-ui-kit";
+import Button from "@mui/material/Button";
+
+import { PricingSec } from "../../../utils/constants";
 
 export default function App(props) {
-  const { title, text, btntext } = props;
+  const { btntext } = props;
   return (
     <MDBCard>
-      <MDBCardOverlay>
-        <div className="donate__header">
-          <MDBCardTitle className="donate__title">{title}</MDBCardTitle>
-        </div>
-        <div className="donate__div">
-          <MDBCardText className="donate__text">{text}</MDBCardText>
-          <MDBBtn className="donate__button">
-            {btntext}
-            <MDBIcon className="donate__icon" fas icon="credit-card" />
-          </MDBBtn>
-        </div>
-      </MDBCardOverlay>
+      <div className="donate__header">
+        {PricingSec.map((label) => (
+          <div>
+            <MDBCardTitle className="donate__title">
+              {label.title ? label.title : "Dona"}
+            </MDBCardTitle>
+            <div className="donate__div">
+              <MDBCardText className="donate__text">{label.text}</MDBCardText>
+              <Button variant="contained">
+                {btntext}
+                <MDBIcon fas icon="credit-card" />
+              </Button>
+            </div>
+          </div>
+        ))}
+      </div>
     </MDBCard>
   );
 }

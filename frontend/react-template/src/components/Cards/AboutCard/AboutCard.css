@@ -52,8 +52,10 @@
 .about__card__title {
   text-align: center;
   font-size: 50px;
+  color: #000000;
 }
 
 .about__card__text {
   text-align: center;
+  color: #000000;
 }

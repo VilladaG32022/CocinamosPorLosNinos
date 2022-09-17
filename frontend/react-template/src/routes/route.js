@@ -1,11 +1,13 @@
 import Volunteer from "../pages/volunteer/volunteer";
 import Donation from "../pages/donate/donation";
 import Home from "../pages/home/home";
+import LogIn from "../pages/Log-In/Log-In";
+
 import BasicLayout from "../layouts/basiclayout";
 import Layout from "../layouts/layout";
-import LogIn from "../pages/Log-In/Log-In";
-import NormalUser from "../pages/Users/NormalUser";
-import UserLayout from "../layouts/userlayout";
+
+import { links } from "../utils/constants";
+
 const routesClient = [
   {
     component: Home,
@@ -14,24 +16,25 @@ const routesClient = [
   },
 
   {
-    component: Donation,
+    component: Home,
     layout: BasicLayout,
-    path: "/donacion",
+    path: links.HOME,
+  },
+
+  {
+    component: Donation,
+    layout: Layout,
+    path: links.DONATE,
   },
   {
     component: Volunteer,
-    layout: BasicLayout,
-    path: "/voluntario",
+    layout: Layout,
+    path: links.VOLUNTEER,
   },
   {
     component: LogIn,
     layout: Layout,
-    path: "/login",
-  },
-  {
-    component: NormalUser,
-    layout: UserLayout,
-    path: "/usuario",
+    path: links.LOGIN,
   },
 ];
 const routes = [...routesClient];
