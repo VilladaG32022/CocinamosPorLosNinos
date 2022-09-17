@@ -1,11 +1,18 @@
-name: CI | Linter
-on: push
+name: CI | ESLint
+
+on: [pull_request]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['16']
     steps:
       - uses: actions/checkout@v2
-      - name: Install modules
-        run: yarn
-      - name: Run ESLint
-        run: eslint . --ext .js,.jsx,.ts,.tsx
+      - name: Setup Node 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - run: npm install
+      - run: npm run lint
