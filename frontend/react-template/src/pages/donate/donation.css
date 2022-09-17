@@ -45,8 +45,6 @@
   --z-fixed: 100;
 }
 
-.Container {
-=======
 .Container{
   margin-top: 100px !important;
 }

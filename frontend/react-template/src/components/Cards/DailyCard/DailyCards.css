@@ -43,11 +43,7 @@
   --z-fixed: 100;
 }
 
-.card {
-  border: none !important;
-  border-radius: 20px !important;
-  margin: 50px;
-=======
+
 .card{
     border: none !important;
     border-radius: 20px !important;
