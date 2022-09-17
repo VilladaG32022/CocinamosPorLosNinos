@@ -16,3 +16,4 @@ jobs:
           node-version: 16.x
       - run: npm install
       - run: npm run lint
+      - run: npm run lint:fix
