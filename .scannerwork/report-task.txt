@@ -1,0 +1,6 @@
+projectKey=VilladaFrontend
+serverUrl=http://localhost:9000
+serverVersion=9.6.1.59531
+dashboardUrl=http://localhost:9000/dashboard?id=VilladaFrontend
+ceTaskId=AYNNE3qWC4C9dRxhldhc
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYNNE3qWC4C9dRxhldhc

@@ -1,4 +1,4 @@
-name: Continuous Integration Prettier
+name: CI | Prettier
 
 on:
   pull_request:
