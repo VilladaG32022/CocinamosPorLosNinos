@@ -1,39 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --first-color: #E8CA9E;
-  --second-color: #77B3B8;
-  --button-color: #77B3B8;
+  --first-color: #e8ca9e;
+  --second-color: #77b3b8;
+  --button-color: #77b3b8;
   --button-color-alt: rgb(0, 56, 53);
   --title-color: rgb(242, 239, 235);
   --title-hover-color: #003835;
-  --text-color: #F2EFEB;
+  --text-color: #f2efeb;
   --text-color-light: hsl(0, 0%, 55%);
   --body-color: hsl(0, 22%, 90%);
   --container-color: #fff;
   --border-color: hsl(0, 0%, 94%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-bold: 700;
 
   /*========== Margenes Bottom ==========*/
-  --mb-0-5: .5rem;
-  --mb-0-75: .75rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
   --mb-1: 1rem;
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
@@ -47,84 +48,83 @@
 
 *{
   font-family: var(--body-font); 
+
 }
 
 .home__container {
-    position: relative;
-    row-gap: 2.5rem;
-    background-image: url(../../assets/Img/comedor1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    margin-top: 100px;
-  }
-  
-  .home__img {
-    width: 240px;
-  }
-  
-  .home__social {
-    position: absolute;
-    top: 35%;
-    left: -5rem;
-    transform: rotate(-90deg);
-    display: flex;
-    column-gap: 1rem;
-  }
-  
-  .home__social-link {
-    font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
-    transition: .3s;
-  }
-  
-  .home__social-link:hover {
-    color: var(--title-color);
-  }
-  
-  .home__title {
-    padding: 60px 0 0 60px;
-    color: var(--text-color);
-    font-size: var(--biggest-font-size);
-    font-weight: var(--font-bold);
-    font-weight: var(--font-medium);
-  }
-  
-  .home__title__bold {
-    padding: 0 0 20px 60px;
-    color: var(--text-color);
-    font-size: var(--biggest-font-size);
-    font-weight: var(--font-bold);
-    margin-bottom: var(--mb-1);
-    font-weight: var(--font-bold);
-  }
-  
-  .home__description {
-    padding: 0 0 0 60px;
-    font-size: var(--normal-font-size);
-    color: var(--text-color);
-    width: 55%;
-  }
-  
-  .home__price {
-    display: inline-block;
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-medium);
-    color: var(--first-color);
-    margin-bottom: var(--mb-3);
-  }
-  
-  .home__btns {
-    margin-top: 125px;
-    display: flex;
-    align-items: center;
-  }
+  position: relative;
+  row-gap: 2.5rem;
+  background-image: url(../../assets/Img/comedor1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-top: 100px;
+}
 
-  .separator{
-    height: 10px;
-    background-color: var(--second-color);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  } 
+.home__img {
+  width: 240px;
+}
 
+.home__social {
+  position: absolute;
+  top: 35%;
+  left: -5rem;
+  transform: rotate(-90deg);
+  display: flex;
+  column-gap: 1rem;
+}
 
+.home__social-link {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  transition: 0.3s;
+}
+
+.home__social-link:hover {
+  color: var(--title-color);
+}
+
+.home__title {
+  padding: 60px 0 0 60px;
+  color: var(--text-color);
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  font-weight: var(--font-medium);
+}
+
+.home__title__bold {
+  padding: 0 0 20px 60px;
+  color: var(--text-color);
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-bold);
+}
+
+.home__description {
+  padding: 0 0 0 60px;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  width: 55%;
+}
+
+.home__price {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  margin-bottom: var(--mb-3);
+}
+
+.home__btns {
+  margin-top: 125px;
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  height: 10px;
+  background-color: var(--second-color);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}

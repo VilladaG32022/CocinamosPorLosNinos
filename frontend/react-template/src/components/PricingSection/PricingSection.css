@@ -1,39 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --first-color: #E8CA9E;
-  --second-color: #77B3B8;
-  --button-color: #77B3B8;
+  --first-color: #e8ca9e;
+  --second-color: #77b3b8;
+  --button-color: #77b3b8;
   --button-color-alt: rgb(0, 56, 53);
   --title-color: rgb(242, 239, 235);
   --title-hover-color: #003835;
-  --text-color: #F2EFEB;
+  --text-color: #f2efeb;
   --text-color-light: hsl(0, 0%, 55%);
   --body-color: hsl(0, 22%, 90%);
   --container-color: #fff;
   --border-color: hsl(0, 0%, 94%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-bold: 700;
 
   /*========== Margenes Bottom ==========*/
-  --mb-0-5: .5rem;
-  --mb-0-75: .75rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
   --mb-1: 1rem;
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
@@ -45,16 +45,18 @@
   --z-fixed: 100;
 }
 
+
 .donate__row{
+
   height: 300px !important;
 }
 
-.donate__header{
+.donate__header {
   background-color: var(--second-color);
   border-radius: 20px 20px 0 0;
 }
 
-.donate__title{
+.donate__title {
   color: var(--text-color);
   padding: 10px;
   text-align: center;
@@ -62,30 +64,29 @@
   font-size: 2rem;
 }
 
-.donate__div{
+.donate__div {
   background-color: var(--first-color);
   padding: 10px;
   border-radius: 0 0 20px 20px;
 }
 
-.donate__text{
+.donate__text {
   color: var(--button-color-alt);
   padding: 10px 10px 0 10px;
 }
 
-.donate__button{
+.donate__button {
   background-color: var(--second-color) !important;
   border: none !important;
   border-radius: 15px !important;
-  transition: .3s !important;
+  transition: 0.3s !important;
   margin: 0 0 5px 0;
 }
 
-.donate__button:hover{
+.donate__button:hover {
   background-color: var(--button-color-alt) !important;
 }
 
-.donate__icon{
-  margin: 0 5px 0 5px ;
+.donate__icon {
+  margin: 0 5px 0 5px;
 }
-

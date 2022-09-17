@@ -16,15 +16,17 @@ export default function AboutCard() {
         <>
           <MDBCard>
             <div className="container">
-                  <MDBCardImage className="CardImage" src={label.src} alt="..." />
-                  <div className="about__middle">
-                    <MDBCardTitle className="about__card__title">
-                      {label.title}
-                    </MDBCardTitle>
-                    <MDBCardText className="about__card__text">{label.text}</MDBCardText>
-                  </div>
-                </div>
-            </MDBCard>
+              <MDBCardImage className="CardImage" src={label.src} alt="..." />
+              <div className="about__middle">
+                <MDBCardTitle className="about__card__title">
+                  {label.title}
+                </MDBCardTitle>
+                <MDBCardText className="about__card__text">
+                  {label.text}
+                </MDBCardText>
+              </div>
+            </div>
+          </MDBCard>
         </>
       ))}
     </MDBCard>
