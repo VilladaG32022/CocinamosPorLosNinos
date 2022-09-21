@@ -21,7 +21,6 @@ export default function VolunteerSection() {
               INSCRIBITE!
             </Button>
           </div>
-          11
         </div>
         <div className="separator"></div>
       </section>

@@ -64,6 +64,7 @@
   margin-right: 30px !important;
   border: none !important;
   transition: 0.3s !important;
+  visibility: hidden;
 }
 
 .btn:hover {

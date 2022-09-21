@@ -47,13 +47,13 @@ export const AboutSec =[
 
 export const VolunteerSec ={
 
-    title:'Voluntariado',
+    title:'VOLUNTARIADO',
     text:'Ayudamos porque sabemos el porqué ayudamos y a quienes ayudamos. Cada integrante de este grupo de familias es consciente y sabe cuando se está ayudando a las infancias de una zona o con alguna problemática en particular. Partimos de lo básico, el alimento que le permitirá a esos niños adquirir y retener conocimientos y poder desarrollarse físicamente.'
 
 }
 
 export const DonateSec ={
-        title:'DONA',
+        title:'DONACIONES',
         text:'Sabemos que es difícil comprometerse con el voluntariado porque existe mucho descreimiento y desconfianza. Por eso nos unimos familias que sólo quieren aportar un poquito que realmente es muchísimo . Tu donación por más chica que sea nos brindará primero apoyo de saber que estamos por un buen camino y luego seguramente un niño más podrá alimentarse. Las donaciones no son obligatorias ni asumen ningún compromiso futuro, seguro que siempre estaremos esperando una próxima vez, para revalidar de parte tuya que estás de acuerdo en este camino que emprendemos de ahora en más juntos.'
 }
 
