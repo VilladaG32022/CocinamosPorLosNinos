@@ -1,36 +1,40 @@
 .primary {
   margin-right: 20px !important;
   margin-left: 60px !important;
-  background-color: var(--first-color) !important;
+  background-color: var(--button-color) !important; 
   border: none !important;
   border-radius: 15px !important;
   padding: 20px !important;
-  transition: 0.3s !important;
+  transition: .3s !important;
+  font-size: 20px !important;
+  width: 150px;
 }
 
-.primary:hover {
+.primary:hover{
   background-color: var(--second-color);
 }
 
-.primary:focus {
+.primary:focus{
   background-color: var(--second-color);
   box-shadow: none;
 }
 
-.secondary {
+.secondary{
   background-color: var(--second-color) !important;
   border: none !important;
   border-radius: 15px !important;
   padding: 20px !important;
   width: 150px !important;
-  transition: 0.3s !important;
+  transition: .3s !important;
+  font-size: 20px !important;
+  width: 150px;
 }
 
-.secondary:hover {
+.secondary:hover{
   background-color: var(--button-color-alt);
 }
 
-.secondary:focus {
+.secondary:focus{
   background-color: var(--button-color-alt);
   box-shadow: none;
 }

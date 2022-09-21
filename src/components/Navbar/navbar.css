@@ -59,11 +59,12 @@
   background-color: var(--second-color) !important;
 }
 
-.search__btn {
+.login__btn {
   background-color: var(--second-color) !important;
-  margin-right: 10px !important;
+  margin-right: 30px !important;
   border: none !important;
   transition: 0.3s !important;
+  visibility: hidden;
 }
 
 .btn:hover {

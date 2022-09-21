@@ -3,7 +3,7 @@
 }
 
 .volunteer__container {
-  padding: 7% 25%;
+  padding: 5% 15%;
   background-image: url(../../assets/Img/comedor1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,10 +16,12 @@
 .volunteer__title__bold {
   padding: 0 0 20px 0;
   color: var(--text-color);
-  font-size: var(--biggest-font-size);
+  font-size: 60px;
   font-weight: var(--font-bold);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-bold);
+  text-shadow: 3px 3px 13px #000000;
+
 }
 
 .volunteer__description {
@@ -27,6 +29,8 @@
   font-size: 20px;
   color: var(--text-color);
   font-weight: 500;
+  text-shadow: 2px 2px 5px #000000;
+
 }
 
 .volunteer__btn {
@@ -35,8 +39,10 @@
   background-color: var(--button-color) !important;
   border: none !important;
   border-radius: 15px !important;
-  padding: 20px !important;
+  padding: 20px 30px !important;
   transition: 0.3s !important;
+  margin-top: 40px;
+
 }
 
 .volunteer__btn:hover {
