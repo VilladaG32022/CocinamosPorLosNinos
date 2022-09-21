@@ -20,14 +20,16 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
 
   const postData = () => {
     console.log("Hola");
-    Axios.post("http://127.0.0.1:8000/PersonTable/", {
-      address,
-      postCode,
-      firstName,
-      dateOfBirth,
-      lastName,
-      email,
-      telephone,
+    Axios.post("https://deploy-hernan.herokuapp.com/Inscriptions/", {
+      first_name: firstName,
+      last_name: lastName,
+      telephone: telephone,
+      email: email,
+      dateOfBirth:dateOfBirth,
+      address: address,
+      number: postCode,
+      neighborhood: 1,
+      
     })
       .then((res) => {
         console.log("Posting Data", res);
@@ -80,12 +82,12 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Codigo Postal</Form.Label>
+              <Form.Label>Numero</Form.Label>
               <Form.Control
                 style={{ border: error ? "2px solid red" : "" }}
                 defaultValue={values.postCode}
                 name="postCode"
-                type="number"
+                type="text"
                 min="0"
                 onChange={handleFormData("postCode")}
               />
