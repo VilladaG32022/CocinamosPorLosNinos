@@ -6,7 +6,7 @@ export default function ActiveStateButton() {
   return (
     <div>
       <Button className="primary" href="#about_section">
-        Sobre Nosotros
+        DONÁ
       </Button>
       <Button className="secondary" href="/volunteer">
         UNITE
