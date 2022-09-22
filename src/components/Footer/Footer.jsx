@@ -26,17 +26,17 @@ export default function FooterSection(props) {
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#about_section" className="text-reset">
                   Acerca de nosotros
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#about_section" className="text-reset">
                   Qué hacemos
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="#about_section" className="text-reset">
                   Dónde estamos
                 </a>
               </p>
@@ -68,23 +68,23 @@ export default function FooterSection(props) {
             <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
               <p className='media__link'>
                 <MDBIcon fab icon="facebook" className="me-3"/>
-                  <a href='#!' className='text-reset'>
+                  <a href='https://www.facebook.com' className='text-reset'>
                     Nuestro Facebook
                   </a>
               </p>
               <p className='media__link'> 
                 <MDBIcon fab icon="instagram" className="me-3"/>
-                  <a href='#!' className='text-reset'>
+                  <a href='https://www.instagram.com' className='text-reset'>
                     Nuestro Instagram
                   </a>
               </p>
               <p>
                 <MDBIcon fas icon="envelope" className="me-3"/>
-                  info@example.com
+                  cocinamosporlosniños@gmail.com.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> 
-                  + 01 234 567 88
+                  + 351 000 0000
               </p>
             </MDBCol>
           </MDBRow>
