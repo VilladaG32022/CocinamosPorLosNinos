@@ -1,5 +1,5 @@
-import Donation from "../pages/donate/donation";
-import Home from "../pages/home/home";
+import Donation from "../pages/donate/index";
+import Home from "../pages/home/index";
 
 
 import BasicLayout from "../layouts/basiclayout";

@@ -2,7 +2,7 @@ import React from "react";
 import "../VolunteerSection/VolunteerSection.css";
 import Button from "react-bootstrap/Button";
 
-import { VolunteerSec, links } from "../../utils/constants";
+import { VolunteerSec} from "../../utils/constants";
 
 export default function VolunteerSection() {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import "../DonationSection/DonationSection.css";
 import Button from "react-bootstrap/Button";
 
-import { links, DonateSec } from "../../utils/constants";
+import { DonateSec } from "../../utils/constants";
 export default function HomeSection() {
   return (
     <>
