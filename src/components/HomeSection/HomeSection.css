@@ -5,7 +5,7 @@
 .home__container {
   position: relative;
   row-gap: 2.5rem;
-  background-image: url(../../assets/Img/comedor1.png);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/comedor1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -17,23 +17,8 @@
   width: 100%;
 }
 
-.home__social {
-  position: absolute;
-  top: 35%;
-  left: -5rem;
-  transform: rotate(-90deg);
-  display: flex;
-  column-gap: 1rem;
-}
-
-.home__social-link {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-  transition: .3s;
-}
-
-.home__social-link:hover {
-  color: var(--title-color);
+.home__data{
+  padding: 40px;
 }
 
 .home__text{
@@ -41,7 +26,7 @@
 }
 
 .home__title {
-  padding: 60px 0 0 60px;
+  padding: 60px 0 0 80px;
   color: var(--text-color);
   font-size: 50px;
   font-weight: var(--font-bold);
@@ -51,7 +36,7 @@
 }
 
 .home__title__bold {
-  padding: 0 0 20px 60px;
+  padding: 0 0 20px 80px;
   color: var(--text-color);
   font-size: 50px;
   font-weight: var(--font-bold);
@@ -62,7 +47,7 @@
 }
 
 .home__description {
-  padding: 0 0 0 60px;
+  padding: 0 0 0 80px;
   font-size: 20px;
   color: var(--text-color);
   width: 55%;
@@ -81,7 +66,7 @@
 .home__btns {
   display: flex;
   align-items: center;
-  padding: 0 0 60px 0;
+  padding: 10px 0 50px 80px;
 }
 
 .separator{

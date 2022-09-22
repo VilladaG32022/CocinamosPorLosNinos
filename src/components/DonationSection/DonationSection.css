@@ -11,7 +11,7 @@
 
 .donation__container {
   padding: 5% 15%;
-  background-image: url(../../assets/Img/comedor1.png);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/comedor1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -39,7 +39,6 @@
   color: var(--text-color);
   font-weight: 500;
   text-shadow: 2px 2px 5px #000000;
-  
 }
 
 .donation__btn {
