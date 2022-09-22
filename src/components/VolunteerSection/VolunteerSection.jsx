@@ -15,13 +15,11 @@ export default function VolunteerSection() {
             <p className="volunteer__description">{VolunteerSec.text}</p>
             <Button
               className="volunteer__btn"
-              href={links.VOLUNTEER}
               variant="primary"
             >
               INSCRIBITE!
             </Button>
           </div>
-          11
         </div>
         <div className="separator"></div>
       </section>
