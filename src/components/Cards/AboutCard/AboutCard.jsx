@@ -8,8 +8,8 @@ export default function AboutCard() {
   return (
     <>
       {AboutSec.map((label) => (
-        <div className="cacaca">
-          <MDBCard >
+        <div>
+          <MDBCard>
             <div className="about__card__container">
               <MDBCardImage className="about__card__image" src={label.src} alt="..." />
               <div className="about__card__content">
@@ -20,7 +20,7 @@ export default function AboutCard() {
               </div>
             </div>
           </MDBCard>
-          </div>
+        </div>
       ))}
     </>
   );

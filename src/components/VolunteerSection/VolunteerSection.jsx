@@ -1,23 +1,19 @@
-import React from "react";
-import "../VolunteerSection/VolunteerSection.css";
-import Button from "react-bootstrap/Button";
+import React from 'react';
+import '../VolunteerSection/VolunteerSection.css';
+import Button from 'react-bootstrap/Button';
 
-import { VolunteerSec, links } from "../../utils/constants";
+import { VolunteerSec, links, btns } from '../../utils/constants';
 
 export default function VolunteerSection() {
   return (
     <>
-      <section className="volunteer" id="volunteer_section">
+      <section className="volunteer" id="voluntariado">
         <div className="volunteer__container">
           <div className="volunteer__data">
             <h1 className="volunteer__title__bold">{VolunteerSec.title}</h1>
             <p className="volunteer__description">{VolunteerSec.text}</p>
-            <Button
-              className="volunteer__btn"
-              href={links.VOLUNTEER}
-              variant="primary"
-            >
-              INSCRIBITE!
+            <Button className="volunteer__btn" href={links.VOLUNTEER} variant="primary">
+              {btns.inscribir}
             </Button>
           </div>
         </div>

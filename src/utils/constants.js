@@ -10,6 +10,20 @@ export const links = {
   VOLUNTEER: '/Voluntario',
 };
 
+export const redirects = {
+  home:'/#home',
+  about:'/#about',
+  donate:'/#donacion',
+  volunteer:'/#voluntariado',
+  news:'/#novedades',
+};
+
+export const btns = {
+  donar:'DONA!',
+  unir: 'UNITE!',
+  inscribir:'INSCRIBITE',
+};
+
 export const HomeSec = {
   title: 'COCINAMOS',
   subtitle: 'POR LOS NIÑOS',
