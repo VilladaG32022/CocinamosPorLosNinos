@@ -12,7 +12,6 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
   const { address, postCode, firstName, dateOfBirth, lastName, email, telephone } = values;
 
   const postData = () => {
-    console.log('Hola');
     Axios.post('https://deploy-hernan.herokuapp.com/Inscriptions/', {
       first_name: firstName,
       last_name: lastName,

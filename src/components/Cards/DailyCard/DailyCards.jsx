@@ -5,17 +5,17 @@ import Modal from 'react-bootstrap/Modal';
 import '../DailyCard/DailyCards.css';
 
 export default function DailyCard(props) {
-  const { title, text, scr } = props;
+  const { title, text, scr, card } = props;
   const [modalShow, setModalShow] = React.useState(false);
-
+console.log(props)
   return (
+
     <Card className="card" style={{ width: '30rem' }}>
-      <Card.Img className="card__img" src={scr} />
+      <Card.Img className="card__img" src={card.img} alt='img no encontrada' />
       <div className="card__separator"></div>
       <Card.Body className="card__body">
-        <Card.Title className="card__title">{title}</Card.Title>
-        <Card.Text className="card__text">{text}</Card.Text>
-        <Button className="card__btn" onClick={() => setModalShow(true)}>
+        <Card.Text className="card__text">{card.description}</Card.Text>
+        <Button className="card__btn" onClick={()=> setModalShow(true)}>
           Seguir leyendo
         </Button>
 
@@ -28,13 +28,13 @@ export default function DailyCard(props) {
     return (
       <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header>
-          <Card.Img className="modal__img" src={scr} />
+          <Card.Img className="modal__img" src={card.img} alt='img no encontrada' />
         </Modal.Header>
         <Modal.Body>
           <Modal.Title className="modal__title" id="contained-modal-title-vcenter">
             {title}
           </Modal.Title>
-          <p className="modal__text">{text}</p>
+          <p className="modal__text">{card.description}</p>
         </Modal.Body>
         <div className="modal__separator"></div>
         <Modal.Footer>
