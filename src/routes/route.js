@@ -1,17 +1,16 @@
-import Donation from "../pages/donate/index";
-import Home from "../pages/home/index";
+import Donation from '../pages/donate/index';
+import Home from '../pages/home/index';
 
+import BasicLayout from '../layouts/basiclayout';
+import Layout from '../layouts/layout';
 
-import BasicLayout from "../layouts/basiclayout";
-import Layout from "../layouts/layout";
-
-import { links } from "../utils/constants";
+import { links } from '../utils/constants';
 
 const routesClient = [
   {
     component: Home,
     layout: BasicLayout,
-    path: "/",
+    path: '/',
   },
   {
     component: Home,
@@ -27,4 +26,3 @@ const routesClient = [
 const routes = [...routesClient];
 
 export default routes;
-
