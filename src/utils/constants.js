@@ -1,7 +1,7 @@
-import pic01 from '../assets/Img/pic01.jpg';
-import pic02 from '../assets/Img/pic02.jpg';
-import pic03 from '../assets/Img/pic03.jpg';
-import pic04 from '../assets/Img/pic04.jpg';
+import pic01 from '../assets/Img/pic01.svg';
+import pic02 from '../assets/Img/pic02.svg';
+import pic03 from '../assets/Img/pic03.svg';
+import pic04 from '../assets/Img/pic04.svg';
 
 export const links ={
     HOME: '/',
