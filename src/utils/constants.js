@@ -11,17 +11,17 @@ export const links = {
 };
 
 export const redirects = {
-  home:'/#home',
-  about:'/#about',
-  donate:'/#donacion',
-  volunteer:'/#voluntariado',
-  news:'/#novedades',
+  home: '/#home',
+  about: '/#about',
+  donate: '/#donacion',
+  volunteer: '/#voluntariado',
+  news: '/#novedades',
 };
 
 export const btns = {
-  donar:'DONA!',
+  donar: 'DONA!',
   unir: 'UNITE!',
-  inscribir:'INSCRIBITE',
+  inscribir: 'INSCRIBITE',
 };
 
 export const HomeSec = {
