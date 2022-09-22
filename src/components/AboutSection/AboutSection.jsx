@@ -8,10 +8,8 @@ export default function AboutSection() {
       <h1 className="about__title" id="about_section">
         Sobre nosotros
       </h1>
-      <div grid className="AboutCard__container">
-        <div className="box">
-          <AboutCard />
-        </div>
+      <div className="about__container">
+        <AboutCard/>
       </div>
     </>
   );

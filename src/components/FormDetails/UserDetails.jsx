@@ -34,6 +34,7 @@ const UserDetails = ({ nextStep, handleFormData, values }) => {
         </div>
         <Card.Body className="form__card">
           <Form onSubmit={submitFormData}>
+          <div className="form__card__labels">
             <Form.Group className="mb-3">
               <Form.Label>Nombre</Form.Label>
               <Form.Control
@@ -127,7 +128,7 @@ const UserDetails = ({ nextStep, handleFormData, values }) => {
                 ""
               )}
             </Form.Group>
-
+            </div>
             <Button className="form__button" type="submit">
               Continuar
             </Button>

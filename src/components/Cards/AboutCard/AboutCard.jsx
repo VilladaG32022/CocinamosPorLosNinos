@@ -1,34 +1,27 @@
-import React from "react";
-import "../AboutCard/AboutCard.css";
-import {
-  MDBCard,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardImage,
-} from "mdb-react-ui-kit";
+import React from 'react';
+import '../AboutCard/AboutCard.css';
+import { MDBCard, MDBCardTitle, MDBCardText, MDBCardImage, MDBCardOverlay } from 'mdb-react-ui-kit';
 
-import { AboutSec } from "../../../utils/constants";
+import { AboutSec } from '../../../utils/constants';
 
 export default function AboutCard() {
   return (
-    <MDBCard background="dark" className="text-white">
+    <>
       {AboutSec.map((label) => (
-        <>
-          <MDBCard>
-            <div className="container">
-              <MDBCardImage className="CardImage" src={label.src} alt="..." />
-              <div className="about__middle">
-                <MDBCardTitle className="about__card__title">
-                  {label.title}
-                </MDBCardTitle>
-                <MDBCardText className="about__card__text">
-                  {label.text}
-                </MDBCardText>
+        <div className="cacaca">
+          <MDBCard >
+            <div className="about__card__container">
+              <MDBCardImage className="about__card__image" src={label.src} alt="..." />
+              <div className="about__card__content">
+                <MDBCardOverlay className="about__card__overlay">
+                  <MDBCardTitle className="about__card__title">{label.title}</MDBCardTitle>
+                  <MDBCardText className="about__card__text">{label.text}</MDBCardText>
+                </MDBCardOverlay>
               </div>
             </div>
           </MDBCard>
-        </>
+          </div>
       ))}
-    </MDBCard>
+    </>
   );
 }

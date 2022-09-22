@@ -1,19 +1,8 @@
-
-.AboutCard__container {
-  justify-content: center;
-  display: grid;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 700px 700px;
-  grid-row: auto auto;
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: -20px;
+.about__container{
+  display:grid;
+  width: 75% !important;
+  grid-template-columns: 50% 50%;
+  margin: auto;
 }
 
 .about__title {
@@ -24,8 +13,10 @@
   font-weight: var(--font-bold);
 }
 
-.CardImage {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px !important;
+.cacaca{
+    align-items:center;
+    justify-content:center;
+
 }
+
+

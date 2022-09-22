@@ -36,7 +36,7 @@ export default function NavScroll() {
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Button className="login__btn" href="/login">
+            <Button className="login__btn" href="/login" >
               Login
             </Button>
           </Form>

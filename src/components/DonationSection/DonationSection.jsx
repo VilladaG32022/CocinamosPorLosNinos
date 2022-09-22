@@ -2,7 +2,7 @@ import React from "react";
 import "../DonationSection/DonationSection.css";
 import Button from "react-bootstrap/Button";
 
-import { links, DonateSec } from "../../utils/constants";
+import { DonateSec } from "../../utils/constants";
 export default function HomeSection() {
   return (
     <>
@@ -14,9 +14,8 @@ export default function HomeSection() {
             <p className="donation__description">{DonateSec.text}</p>
             <Button
               className="donation__btn"
-              href={links.DONATE}
               variant="primary"
-            >
+              >
               DONA!
             </Button>
           </div>

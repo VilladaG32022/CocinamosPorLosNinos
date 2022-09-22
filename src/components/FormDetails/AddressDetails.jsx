@@ -20,14 +20,16 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
 
   const postData = () => {
     console.log("Hola");
-    Axios.post("http://127.0.0.1:8000/PersonTable/", {
-      address,
-      postCode,
-      firstName,
-      dateOfBirth,
-      lastName,
-      email,
-      telephone,
+    Axios.post("https://deploy-hernan.herokuapp.com/Inscriptions/", {
+      first_name: firstName,
+      last_name: lastName,
+      telephone: telephone,
+      email: email,
+      dateOfBirth:dateOfBirth,
+      address: address,
+      number: postCode,
+      neighborhood: 1,
+      
     })
       .then((res) => {
         console.log("Posting Data", res);
@@ -61,6 +63,7 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
         </div>
         <Card.Body className="form__card">
           <Form onSubmit={submitFormData}>
+          <div className="form__card__labels">
             <Form.Group className="mb-3">
               <Form.Label>Direccion</Form.Label>
               <Form.Control
@@ -80,12 +83,12 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Codigo Postal</Form.Label>
+              <Form.Label>Numero</Form.Label>
               <Form.Control
                 style={{ border: error ? "2px solid red" : "" }}
                 defaultValue={values.postCode}
                 name="postCode"
-                type="number"
+                type="text"
                 min="0"
                 onChange={handleFormData("postCode")}
               />
@@ -97,13 +100,15 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
                 ""
               )}
             </Form.Group>
+            </div>
+
             <div style={{ display: "flex", justifyContent: "space-around" }}>
-              <Button className="form__button" onClick={prevStep}>
+              <Button className="form__button__back" onClick={prevStep}>
                 Volver
               </Button>
 
               <Button
-                className="form__button"
+                className="form__button__send"
                 type="submit"
                 onClick={submitFormData}
               >

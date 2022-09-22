@@ -3,6 +3,7 @@
     border: none !important;
     border-radius: 12px !important;
     margin: 50px;
+    width: 20% !important;
 }
 
 .card__img{

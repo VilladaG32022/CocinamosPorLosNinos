@@ -5,11 +5,11 @@ import "../ActiveStateButtons/activestatebutton.css";
 export default function ActiveStateButton() {
   return (
     <div>
-      <Button className="primary" href="#about_section">
-        Sobre Nosotros
+      <Button className="primary" href="#donation_section">
+        DONÁ!
       </Button>
-      <Button className="secondary" href="/volunteer">
-        UNITE
+      <Button className="secondary">
+        UNITE!
       </Button>
     </div>
   );
