@@ -1,7 +1,8 @@
 .about__container{
-  background-color:#fff;
   display:grid;
+  width: 75% !important;
   grid-template-columns: 50% 50%;
+  margin: auto;
 }
 
 .about__title {
