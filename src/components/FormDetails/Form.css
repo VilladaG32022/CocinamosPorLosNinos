@@ -1,12 +1,13 @@
 .form__card__container {
-  margin-top: 70px !important;
-  margin-bottom: -30px !important;
-  width: 500px;
+  width: 100% !important;
+  margin: auto;
+  margin-top: 100px;
 }
 
 .form__card {
   background-color: var(--first-color);
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 12px 12px;
+  padding: 0px !important;
 }
 
 .form__header {
@@ -14,7 +15,7 @@
   background-color: var(--second-color);
   border: 0 0 5px 0;
   border-color: var(--text-color);
-  border-radius: 20px 20px 0 0;
+  border-radius: 12px 12px 0 0;
 }
 
 .form__title {
@@ -24,15 +25,39 @@
   font-weight: 600;
 }
 
+.form__card__labels{
+  padding: 20px;
+}
+
 .form-label {
   color: var(--button-color-alt);
 }
 
 .form__button {
+  background-color: var(--button-color) !important;
+  border: none !important;
+  padding: 20px !important;
+  transition: .3s !important;
+  width: 100% !important;
+  border-radius: 0 0 12px 12px !important;
+}
+
+.form__button__back{
+  background-color: var(--button-color) !important;
+  border: none !important;
+  padding: 20px !important;
+  transition: .3s !important;
+  width: 100% !important;
+  border-radius: 0 0 0 12px !important;
+}
+
+.form__button__send{
   background-color: var(--second-color) !important;
   border: none !important;
-  transition: 0.3s !important;
-  margin-top: 5px;
+  padding: 20px !important;
+  transition: .3s !important;
+  width: 100% !important;
+  border-radius: 0 0 12px 0 !important;
 }
 
 .form__button:hover {

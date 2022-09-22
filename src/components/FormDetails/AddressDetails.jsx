@@ -63,6 +63,7 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
         </div>
         <Card.Body className="form__card">
           <Form onSubmit={submitFormData}>
+          <div className="form__card__labels">
             <Form.Group className="mb-3">
               <Form.Label>Direccion</Form.Label>
               <Form.Control
@@ -99,13 +100,15 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
                 ""
               )}
             </Form.Group>
+            </div>
+
             <div style={{ display: "flex", justifyContent: "space-around" }}>
-              <Button className="form__button" onClick={prevStep}>
+              <Button className="form__button__back" onClick={prevStep}>
                 Volver
               </Button>
 
               <Button
-                className="form__button"
+                className="form__button__send"
                 type="submit"
                 onClick={submitFormData}
               >
