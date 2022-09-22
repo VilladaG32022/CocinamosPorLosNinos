@@ -80,7 +80,7 @@ export default function FooterSection(props) {
               </p>
               <p>
                 <MDBIcon fas icon="envelope" className="me-3"/>
-                  cocinamosporlosniños@gmail.com.com
+                  cocinamos@gmail.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> 

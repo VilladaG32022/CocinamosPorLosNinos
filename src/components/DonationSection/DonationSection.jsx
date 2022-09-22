@@ -15,6 +15,7 @@ export default function HomeSection() {
             <Button
               className="donation__btn"
               variant="primary"
+              href="/Donar"
               >
               DONA!
             </Button>

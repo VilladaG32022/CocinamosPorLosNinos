@@ -8,6 +8,7 @@ export default function VolunteerSection() {
   return (
     <>
       <section className="volunteer" id="volunteer_section">
+      <div className="don__separator"></div>
         <div className="volunteer__container">
           <div className="volunteer__data">
             <h1 className="volunteer__title__bold">{VolunteerSec.title}</h1>
