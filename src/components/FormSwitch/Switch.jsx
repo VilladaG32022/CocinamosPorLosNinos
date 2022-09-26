@@ -1,7 +1,7 @@
-import { Container, Row, Col } from "react-bootstrap";
-import { useState } from "react";
-import UserDetails from "../FormDetails/UserDetails";
-import AddressDetails from "../FormDetails/AddressDetails";
+import { Container, Row, Col } from 'react-bootstrap';
+import { useState } from 'react';
+import UserDetails from '../FormDetails/UserDetails';
+import AddressDetails from '../FormDetails/AddressDetails';
 
 function Switch() {
   //state for steps
@@ -9,11 +9,11 @@ function Switch() {
 
   //state for form data
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    dateOfBirth: "",
-    email: "",
-    postCode: "",
+    firstName: '',
+    lastName: '',
+    dateOfBirth: '',
+    email: '',
+    postCode: '',
   });
 
   // function for going to next step by increasing step state by 1
@@ -47,11 +47,7 @@ function Switch() {
           <Container>
             <Row>
               <Col md={{ span: 6, offset: 3 }} className="custom-margin">
-                <UserDetails
-                  nextStep={nextStep}
-                  handleFormData={handleInputData}
-                  values={formData}
-                />
+                <UserDetails nextStep={nextStep} handleFormData={handleInputData} values={formData} />
               </Col>
             </Row>
           </Container>
@@ -64,11 +60,7 @@ function Switch() {
           <Container>
             <Row>
               <Col md={{ span: 6, offset: 3 }} className="custom-margin">
-                <AddressDetails
-                  prevStep={prevStep}
-                  handleFormData={handleInputData}
-                  values={formData}
-                />
+                <AddressDetails prevStep={prevStep} handleFormData={handleInputData} values={formData} />
               </Col>
             </Row>
           </Container>
