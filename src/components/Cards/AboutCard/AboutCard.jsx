@@ -8,19 +8,17 @@ export default function AboutCard() {
   return (
     <>
       {AboutSec.map((label) => (
-        <div>
-          <MDBCard>
-            <div className="about__card__container">
-              <MDBCardImage className="about__card__image" src={label.src} alt="..." />
-              <div className="about__card__content">
-                <MDBCardOverlay className="about__card__overlay">
-                  <MDBCardTitle className="about__card__title">{label.title}</MDBCardTitle>
-                  <MDBCardText className="about__card__text">{label.text}</MDBCardText>
-                </MDBCardOverlay>
-              </div>
+        <MDBCard>
+          <div className="about__card__container">
+            <MDBCardImage className="about__card__image" src={label.src} alt="..." />
+            <div className="about__card__content">
+              <MDBCardOverlay className="about__card__overlay">
+                <MDBCardTitle className="about__card__title">{label.title}</MDBCardTitle>
+                <MDBCardText className="about__card__text">{label.text}</MDBCardText>
+              </MDBCardOverlay>
             </div>
-          </MDBCard>
-        </div>
+          </div>
+        </MDBCard>
       ))}
     </>
   );
