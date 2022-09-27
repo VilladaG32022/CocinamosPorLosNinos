@@ -51,3 +51,7 @@
     background-color: var(--second-color);
     margin: auto;
 }
+
+.col-md-4{
+    width: 350px;
+}

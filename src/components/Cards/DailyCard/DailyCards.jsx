@@ -10,7 +10,7 @@ export default function DailyCard(props) {
 console.log(props)
   return (
 
-    <Card className="card" style={{ width: '30rem' }}>
+    <Card className="daily__card" style={{ width: '30rem' }}>
       <Card.Img className="card__img" src={card.img} alt='img no encontrada' />
       <div className="card__separator"></div>
       <Card.Body className="card__body">
