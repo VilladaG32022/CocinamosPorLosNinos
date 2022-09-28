@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import '../DailyCard/DailyCards.css';
 
 export default function DailyCard(props) {
-  const { title, text, scr, card } = props;
+  const { title, card } = props;
   const [modalShow, setModalShow] = React.useState(false);
 console.log(props)
   return (

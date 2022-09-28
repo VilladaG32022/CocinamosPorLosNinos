@@ -2,6 +2,7 @@ import pic01 from '../assets/Img/pic01.png';
 import pic02 from '../assets/Img/pic02.png';
 import pic03 from '../assets/Img/pic03.png';
 import pic04 from '../assets/Img/pic04.png';
+import pic05 from '../assets/Img/comedor1.png';
 
 export const links = {
   HOME: '/',
