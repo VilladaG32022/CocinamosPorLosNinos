@@ -19,8 +19,8 @@ export default function AboutCard() {
                 </MDBCardOverlay>
               </div>
             </div>
-          </div>
-        </MDBCard>
+          </MDBCard>
+        </div>
       ))}
     </>
   );
