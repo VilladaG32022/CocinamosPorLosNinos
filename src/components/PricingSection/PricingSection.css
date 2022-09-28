@@ -1,43 +1,4 @@
-.donate__row {
-  height: 300px !important;
-}
-
-.donate__header {
-  background-color: var(--second-color);
-  border-radius: 20px 20px 0 0;
-}
-
-.donate__title {
-  color: var(--text-color);
-  padding: 10px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.donate__div {
-  background-color: var(--first-color);
-  padding: 10px;
-  border-radius: 0 0 20px 20px;
-}
-
-.donate__text {
-  color: var(--button-color-alt);
-  padding: 10px 10px 0 10px;
-}
-
-.donate__button {
-  background-color: var(--second-color) !important;
-  border: none !important;
-  border-radius: 15px !important;
-  transition: 0.3s !important;
-  margin: 0 0 5px 0;
-}
-
-.donate__button:hover {
-  background-color: var(--button-color-alt) !important;
-}
-
-.donate__icon {
-  margin: 0 5px 0 5px;
+.pricing__card__container{
+  margin: auto;
+  margin-top: 100px;
 }

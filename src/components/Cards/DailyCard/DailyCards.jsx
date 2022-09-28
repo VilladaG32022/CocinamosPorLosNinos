@@ -5,12 +5,12 @@ import Modal from 'react-bootstrap/Modal';
 import '../DailyCard/DailyCards.css';
 
 export default function DailyCard(props) {
-  const { title, text, scr, card } = props;
+  const { title, card } = props;
   const [modalShow, setModalShow] = React.useState(false);
 console.log(props)
   return (
 
-    <Card className="card" style={{ width: '30rem' }}>
+    <Card className="daily__card" style={{ width: '30rem' }}>
       <Card.Img className="card__img" src={card.img} alt='img no encontrada' />
       <div className="card__separator"></div>
       <Card.Body className="card__body">
