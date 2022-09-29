@@ -58,6 +58,7 @@ export const AboutSec = [
 export const VolunteerSec = {
   title: 'VOLUNTARIADO',
   text: 'Ayudamos porque sabemos el porqué ayudamos y a quienes ayudamos. Cada integrante de este grupo de familias es consciente y sabe cuando se está ayudando a las infancias de una zona o con alguna problemática en particular. Partimos de lo básico, el alimento que le permitirá a esos niños adquirir y retener conocimientos y poder desarrollarse físicamente.',
+  src: pic05,
 };
 
 export const DonateSec = {

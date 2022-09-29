@@ -8,7 +8,9 @@ export default function VolunteerSection() {
   return (
     <>
       <section className="volunteer" id="voluntariado">
-        <div className="volunteer__container" >
+
+        <div className="separator"></div>
+        <div className="volunteer__container" href={VolunteerSec.src} >
           <div className="volunteer__data">
             <h1 className="volunteer__title__bold">{VolunteerSec.title}</h1>
             <p className="volunteer__description">{VolunteerSec.text}</p>
