@@ -3,7 +3,6 @@ import pic02 from '../assets/Img/pic02.png';
 import pic03 from '../assets/Img/pic03.png';
 import pic04 from '../assets/Img/pic04.png';
 
-
 export const links = {
   HOME: '/',
   DONATE: '/Donar',
