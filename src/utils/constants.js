@@ -2,6 +2,8 @@ import pic01 from '../assets/Img/pic01.png';
 import pic02 from '../assets/Img/pic02.png';
 import pic03 from '../assets/Img/pic03.png';
 import pic04 from '../assets/Img/pic04.png';
+
+
 export const links = {
   HOME: '/',
   DONATE: '/Donar',
@@ -61,6 +63,12 @@ export const VolunteerSec = {
 };
 
 export const DonateSec = {
+  title: 'DONACIONES',
+  text: 'Sabemos que es difícil comprometerse con el voluntariado porque existe mucho descreimiento y desconfianza. Por eso nos unimos familias que sólo quieren aportar un poquito que realmente es muchísimo . Tu donación por más chica que sea nos brindará primero apoyo de saber que estamos por un buen camino y luego seguramente un niño más podrá alimentarse. Las donaciones no son obligatorias ni asumen ningún compromiso futuro, seguro que siempre estaremos esperando una próxima vez, para revalidar de parte tuya que estás de acuerdo en este camino que emprendemos de ahora en más juntos.',
+};
+
+export const PricingSec = [
+  {
     title: 'DONACIONES',
     text: (
       <p className="pp">
@@ -72,8 +80,8 @@ export const DonateSec = {
         encarga de dicha tarea.
       </p>
     ),
-  };
-
+  },
+];
 
 export const PricingCardSec = {
   title: 'DONACIONES',
