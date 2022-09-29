@@ -2,12 +2,13 @@ import React from 'react';
 import '../VolunteerSection/VolunteerSection.css';
 import Button from 'react-bootstrap/Button';
 
-import { VolunteerSec, links, btns, bgimage } from '../../utils/constants';
+import { VolunteerSec, links, btns} from '../../utils/constants';
 
 export default function VolunteerSection() {
   return (
     <>
       <section className="volunteer" id="voluntariado">
+
         <div className="separator"></div>
         <div className="volunteer__container" href={VolunteerSec.src} >
           <div className="volunteer__data">

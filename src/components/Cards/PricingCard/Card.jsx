@@ -1,10 +1,10 @@
 import React from 'react';
-import { MDBCard, MDBCardTitle, MDBCardText, MDBIcon, MDBCardHeader, MDBCardBody } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardTitle, MDBCardHeader} from 'mdb-react-ui-kit';
 import Button from '@mui/material/Button';
 import '../PricingCard/PricingCard.css';
 
 export default function App(props) {
-  const { btntext } = props;
+  const { btntext, mp } = props;
   return (
     <MDBCard className='pricing__card'>
       <MDBCardHeader className='pricing__header'>
@@ -12,7 +12,7 @@ export default function App(props) {
           {btntext}
         </MDBCardTitle>
       </MDBCardHeader>
-      <Button className='pricing__button'>
+      <Button className='pricing__button' href={mp}>
         DONAR
       </Button>
     </MDBCard>
