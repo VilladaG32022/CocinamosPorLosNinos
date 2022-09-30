@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Form, Card, Button } from 'react-bootstrap';
 import Axios from 'axios';
 import validator from 'validator';
-import { redirects } from '../../utils/constants';
 
 // creating functional component ans getting props from app.js and destucturing them
 const AddressDetails = ({ handleFormData, prevStep, values }) => {
@@ -70,7 +69,7 @@ const AddressDetails = ({ handleFormData, prevStep, values }) => {
                 Volver
               </Button>
 
-              <Button className="form__button__send" href={redirects.home} type="submit" onClick={submitFormData}>
+              <Button className="form__button__send" type="submit" onClick={submitFormData}>
                 Enviar
               </Button>
             </div>
