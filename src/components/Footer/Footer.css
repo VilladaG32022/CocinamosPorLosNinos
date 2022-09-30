@@ -20,6 +20,7 @@
 
 .text-reset{
     transition: .3s;
+    text-decoration:none;
 }
 
 .text-reset:hover{
