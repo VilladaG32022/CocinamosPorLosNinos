@@ -2,7 +2,7 @@ import React from 'react';
 import 'cdbreact';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import '../Footer/Footer.css';
-import logo_cuenco_blanco from '../../assets/Img/logo_cuenco_blanco.png';
+import logo_cuenco_favicon from '../../assets/Img/favicon/android-chrome-192x192.png';
 
 import { redirects } from '../../utils/constants';
 
@@ -14,7 +14,7 @@ export default function FooterSection(props) {
         <MDBContainer className="text-center text-md-start mt-5">
           <MDBRow className="footer__row mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4" id="logo__col">
-              <img src={logo_cuenco_blanco} className="footer__logo" alt="logo" />
+              <img src={logo_cuenco_favicon} className="footer__logo" alt="logo" />
               <h5 className="text-uppercase fw-bold mb-4">COCINAMOS <br></br> POR LOS NIÑOS</h5>
             </MDBCol>
 
@@ -38,12 +38,12 @@ export default function FooterSection(props) {
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <p>
-                <a href="/Voluntario" className="text-reset">
+                <a href="/voluntario" className="text-reset">
                   Involucrate
                 </a>
               </p>
               <p>
-                <a href="/Donar" className="text-reset">
+                <a href="/donar" className="text-reset">
                   Donaciones
                 </a>
               </p>

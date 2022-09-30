@@ -6,9 +6,9 @@ import pic05 from '../assets/Img/comedor1.png';
 
 export const links = {
   HOME: '/',
-  DONATE: '/Donar',
-  LOGIN: '/Login',
-  VOLUNTEER: '/Voluntario',
+  DONATE: '/donar',
+  LOGIN: '/login',
+  VOLUNTEER: '/voluntario',
 };
 
 export const redirects = {
