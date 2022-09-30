@@ -67,3 +67,10 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   margin-top: 70px;
 }
+
+.don__lower__separator{
+  height: 10px;
+  background-color: var(--second-color);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
+}
