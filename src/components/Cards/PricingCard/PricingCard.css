@@ -46,6 +46,7 @@
 
 .donate__card {
     margin: auto;
+    margin-top: 100px;
     background-color: var(--first-color) !important;
     width: 90% !important;
     border: none !important;
