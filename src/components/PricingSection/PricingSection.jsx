@@ -9,7 +9,7 @@ export default function PricingContainer(props) {
     <div>
       <MDBContainer className='pricing__container'>
         <MDBRow>
-            <FirstCard btntext="Contacto" />
+            <FirstCard btntext="CONTACTO" />
         </MDBRow>
       </MDBContainer>
       <MDBContainer className='pricing__container'>

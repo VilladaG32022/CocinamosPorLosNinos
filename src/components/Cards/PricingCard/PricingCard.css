@@ -1,7 +1,9 @@
 .pricing__card{
-    width: 75% !important;
+    width: 70% !important;
     border: none !important;
-    margin: 40px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .pricing__header{
@@ -48,7 +50,7 @@
 .donate__card {
     margin: auto;
     background-color: var(--first-color) !important;
-    width: 90% !important;
+    width: 90.5% !important;
     border: none !important;
     border-radius: 10px !important;
 }
@@ -92,3 +94,38 @@
     background-color: var(--button-color-alt) !important;
 }
   
+
+.caca{
+    color : var(--text-color);
+}
+
+.nav__caca {
+  width : 100%; 
+  background: var(--button-color);
+  border-radius: 0 0 5px 5px !important;
+  text-align: center;
+}
+
+.donate__span{
+    color: var(--text-color);
+    padding: 20px 40% 20px 40%;
+    top: 50%;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {padding : 20px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 180px;} 
