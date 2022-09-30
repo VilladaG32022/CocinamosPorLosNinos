@@ -71,12 +71,10 @@ export const PricingSec = [
     title: 'DONACIONES',
     text: (
       <p className="pp">
-        Sabemos que es difícil comprometerse con el voluntariado porque existe mucho descreimiento y desconfianza. Por eso nos unimos familias que sólo quieren aportar un poquito que realmente es
-        muchísimo. Tu donación por más chica que sea nos brindará primero apoyo de saber que estamos por un buen camino y luego seguramente un niño más podrá alimentarse. <br></br>
-        <br></br> Las donaciones no son obligatorias ni asumen ningún compromiso futuro, seguro que siempre estaremos esperando una próxima vez, para revalidar de parte tuya que estás de acuerdo en
-        este camino que emprendemos de ahora en más juntos. <br></br>
-        <br></br> Las donaciones se pueden entregar en puntos de la ciudad en caso de querer entregarlas personalmente o las podemos pasar a buscar a través de alguno de nuestros voluntarios que se
-        encarga de dicha tarea.
+        Con tu aporte, por más pequeño que sea, estás poniendo un plato en la mesa de un niño. <br></br> <br></br>
+        Mediante donaciones, tanto monetarias como alimenticias, nos podes dar una mano para cumplir nuestro objetivo de ayudar a los niños que nos necesitan. <br></br> <br></br>
+        Para donar alimentos o mercaderia, contactate con nosotros o acercate a algunos de nuestros puntos.
+
       </p>
     ),
   },

@@ -1,3 +1,8 @@
+.pricing__card__container{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
 .pricing__card{
     width: 70% !important;
     border: none !important;
@@ -53,6 +58,7 @@
     width: 90.5% !important;
     border: none !important;
     border-radius: 10px !important;
+    margin-top: 100px;
 }
 
 .donate__header{
@@ -77,6 +83,8 @@
 .pp{
     margin: 0;
     text-align: left;
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .donate__button{
@@ -93,7 +101,10 @@
 .donate__button:hover{
     background-color: var(--button-color-alt) !important;
 }
-  
+
+.donate__row{
+
+}
 
 .caca{
     color : var(--text-color);
@@ -129,3 +140,59 @@
 #touch {position: absolute; opacity: 0; height: 0px;}    
 
 #touch:checked + .slide {height: 180px;} 
+
+
+
+.donate__contact{
+    background-color: var(--button-color);
+    border-radius: 0px 0px 5px 5px !important;
+    color: var(--text-color);
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    float: left;
+    position: relative;
+    transition: height .3s;
+    -webkit-transition: height .3s;
+    text-align: center;
+    overflow: hidden;
+    transition: 1.5s;
+  }
+
+.donate__contact:hover{
+    height: 225px;
+    background-color: var(--second-color);
+}
+
+.contact__title{
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.contact__icon{
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.donate__contact:hover .contact__icon{
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
+
+.contact__option{
+    width: 100%;
+    transition: .3s;
+    margin: 0px;
+    padding: 10px;
+}
+
+.contact__option:hover{
+    background-color: var(--button-color);
+}

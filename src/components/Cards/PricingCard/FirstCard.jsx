@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCard, MDBCardTitle, MDBCardText, MDBCardHeader } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardTitle, MDBCardText, MDBCardHeader, MDBCardBody, MDBIcon } from 'mdb-react-ui-kit';
 
 
 import { PricingSec } from '../../../utils/constants';
@@ -11,10 +11,31 @@ export default function App(props) {
     <div>
         {PricingSec.map((label) => (
         <MDBCard className='donate__card'>
-        <MDBCardHeader className='donate__header'>
+          <MDBCardHeader className='donate__header'>
             <MDBCardTitle className="donate__title">{label.title}</MDBCardTitle>
-        </MDBCardHeader>
+          </MDBCardHeader>
+          <MDBCardBody>
             <MDBCardText className="donate__text">{label.text}</MDBCardText>
+            </MDBCardBody>
+            <div className="donate__contact" >
+              <h2 className='contact__title'>CONTACTATE CON NOSOTROS <MDBIcon fas icon="caret-down" className="me-3 contact__icon" /></h2>
+              <p className='contact__option'>
+                <MDBIcon icon="phone" className="me-3"/>
+                + 351 000 0000
+              </p> 
+              <p className='contact__option'>
+                <MDBIcon fas icon="envelope" className="me-3"/>
+                cocinamosporlosniños@gmail.com
+              </p>
+              <p className='contact__option'>
+                <MDBIcon fas icon="home" className="me-3"/>
+                Dirección 1
+              </p>
+              <p className='contact__option'>
+                <MDBIcon fas icon="home" className="me-3"/>
+                Dirección 2
+              </p>
+            </div>
         </MDBCard>
         ))}
     </div>
