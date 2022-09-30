@@ -74,7 +74,6 @@ export const PricingSec = [
         Con tu aporte, por más pequeño que sea, estás poniendo un plato en la mesa de un niño. <br></br> <br></br>
         Mediante donaciones, tanto monetarias como alimenticias, nos podes dar una mano para cumplir nuestro objetivo de ayudar a los niños que nos necesitan. <br></br> <br></br>
         Para donar alimentos o mercaderia, contactate con nosotros o acercate a algunos de nuestros puntos.
-
       </p>
     ),
   },
