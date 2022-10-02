@@ -33,6 +33,5 @@ export default function PricingContainer(props) {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
-    }
   );
 }

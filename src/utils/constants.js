@@ -2,15 +2,16 @@ import pic01 from '../assets/Img/pic01.png';
 import pic02 from '../assets/Img/pic02.png';
 import pic03 from '../assets/Img/pic03.png';
 import pic04 from '../assets/Img/pic04.png';
+
 export const links = {
   HOME: '/',
-  DONATE: '/Donar',
-  LOGIN: '/Login',
-  VOLUNTEER: '/Voluntario',
+  DONATE: '/donar',
+  LOGIN: '/login',
+  VOLUNTEER: '/voluntario',
 };
 
 export const redirects = {
-  home: '/#home',
+  home: '/#',
   about: '/#about',
   donate: '/#donacion',
   volunteer: '/#voluntariado',
@@ -58,7 +59,6 @@ export const AboutSec = [
 export const VolunteerSec = {
   title: 'VOLUNTARIADO',
   text: 'Ayudamos porque sabemos el porqué ayudamos y a quienes ayudamos. Cada integrante de este grupo de familias es consciente y sabe cuando se está ayudando a las infancias de una zona o con alguna problemática en particular. Partimos de lo básico, el alimento que le permitirá a esos niños adquirir y retener conocimientos y poder desarrollarse físicamente.',
-  src: pic05,
 };
 
 export const DonateSec = {
