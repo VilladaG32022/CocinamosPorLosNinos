@@ -5,14 +5,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import { redirects } from '../../utils/constants';
 
 import '../Navbar/navbar.css';
-import logo_color from '../../assets/Img/logo_color.png';
+import logo_cuenco_favicon from '../../assets/Img/favicon/android-chrome-192x192.png';
 
 export default function NavScroll() {
   return (
     <div className="fixed-top">
       <Navbar className="nav" expand="lg">
         <Navbar.Brand href="/#home_section">
-          <img src={logo_color} className="nav__logo" alt="logo" />
+          <img src={logo_cuenco_favicon} className="nav__logo" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

@@ -2,7 +2,7 @@ import React from 'react';
 import 'cdbreact';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import '../Footer/Footer.css';
-import logo_color from '../../assets/Img/logo_color.png';
+import logo_cuenco_favicon from '../../assets/Img/favicon/android-chrome-192x192.png';
 
 import { redirects } from '../../utils/constants';
 
@@ -14,8 +14,8 @@ export default function FooterSection(props) {
         <MDBContainer className="text-center text-md-start mt-5">
           <MDBRow className="footer__row mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4" id="logo__col">
-              <img src={logo_color} className="footer__logo" alt="logo" />
-              <h5 className="text-uppercase fw-bold mb-4">COCINAMOS POR LOS NIÑOS</h5>
+              <img src={logo_cuenco_favicon} className="footer__logo" alt="logo" />
+              <h5 className="text-uppercase fw-bold mb-4">COCINAMOS <br></br> POR LOS NIÑOS</h5>
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
@@ -38,12 +38,12 @@ export default function FooterSection(props) {
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <p>
-                <a href={redirects.volunteer} className="text-reset">
+                <a href="/voluntario" className="text-reset">
                   Involucrate
                 </a>
               </p>
               <p>
-                <a href={redirects.donate} className="text-reset">
+                <a href="/donar" className="text-reset">
                   Donaciones
                 </a>
               </p>
@@ -51,14 +51,14 @@ export default function FooterSection(props) {
 
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <p className="media__link">
-                <MDBIcon fab icon="facebook" className="me-3" />
                 <a href="https://www.facebook.com" className="text-reset">
+                <MDBIcon fab icon="facebook" className="me-3" />
                   Nuestro Facebook
                 </a>
               </p>
               <p className="media__link">
-                <MDBIcon fab icon="instagram" className="me-3" />
                 <a href="https://www.instagram.com" className="text-reset">
+                <MDBIcon fab icon="instagram" className="me-3" />
                   Nuestro Instagram
                 </a>
               </p>

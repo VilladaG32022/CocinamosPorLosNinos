@@ -8,6 +8,7 @@
     background-color: var(--second-color) !important;
     border-radius: 5px 5px 0 0 !important;
     width: 100% !important;
+    border: none !important;
 }
   
 .pricing__body{
@@ -55,6 +56,7 @@
 
 .donate__header{
     background-color: var(--second-color) !important;
+    border: none !important;
 }
 
 .donate__title {
