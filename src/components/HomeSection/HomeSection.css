@@ -5,7 +5,7 @@
 .home__container {
   position: relative;
   row-gap: 2.5rem;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/comedor1.png);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/home1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
