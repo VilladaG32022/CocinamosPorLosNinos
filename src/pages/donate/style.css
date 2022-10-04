@@ -1,6 +1,6 @@
-.Container {
+.donate__page__container {
   margin-top: 100px !important;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(https://images.pexels.com/photos/6590920/pexels-photo-6590920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/food.png);
   background-repeat: no-repeat;
   background-size: 100%;
 
