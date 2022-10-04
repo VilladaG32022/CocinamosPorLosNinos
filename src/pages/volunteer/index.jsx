@@ -1,12 +1,12 @@
 import React from "react";
-import MultiStepForm from "../../components/Forms/MultiStepForm";
+import Form from "../../components/Forms/Form";
 
 import "../volunteer/style.css";
 
 export default function Volunteer() {
   return (
     <div className="Container">
-      <MultiStepForm />
+      <Form/>
     </div>
   );
 }

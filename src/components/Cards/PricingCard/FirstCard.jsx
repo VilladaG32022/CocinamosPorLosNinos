@@ -7,6 +7,7 @@ import { PricingSec } from '../../../utils/constants';
 
 
 export default function App(props) {
+  const { btntext} = props;
   return (
     <div>
         {PricingSec.map((label) => (
@@ -16,7 +17,7 @@ export default function App(props) {
           </MDBCardHeader>
           <MDBCardBody>
             <MDBCardText className="donate__text">{label.text}</MDBCardText>
-            </MDBCardBody>
+          </MDBCardBody>
             <div className="donate__contact" >
               <h2 className='contact__title'>CONTACTATE CON NOSOTROS <MDBIcon fas icon="caret-down" className="me-3 contact__icon" /></h2>
               <p className='contact__option'>

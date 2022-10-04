@@ -5,13 +5,13 @@ import pic04 from '../assets/Img/pic04.png';
 
 export const links = {
   HOME: '/',
-  DONATE: '/Donar',
-  LOGIN: '/Login',
-  VOLUNTEER: '/Voluntario',
+  DONATE: '/donar',
+  LOGIN: '/login',
+  VOLUNTEER: '/voluntario',
 };
 
 export const redirects = {
-  home: '/#home',
+  home: '/#',
   about: '/#about',
   donate: '/#donacion',
   volunteer: '/#voluntariado',
