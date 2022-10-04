@@ -1,16 +1,15 @@
 .about__card{
   border: none !important;
-  margin: 50px;
-  width: 20% !important;
+  margin: 40px;
 }
 
 .about__card__container{
-  width: 600px;
+  width: 100%;
 }
 
 .about__card__overlay{
   transition: .3s;
-  width: 600px;
+  width: 100%;
 }
 
 .about__card__title{
@@ -45,6 +44,10 @@
   border-radius: 5px !important;
 }
 
+.about__card__overlay{
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1));
+}
+
 .about__card__content:hover .about__card__title{
   opacity: 0;
 }
@@ -56,4 +59,8 @@
 .about__card__content:hover .about__card__overlay{
   background-color: rgba(129, 82, 21, 0.75);
   
+}
+
+.caca{
+  margin: 0px !important;
 }
