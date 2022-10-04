@@ -19,7 +19,7 @@ export default function VolunteerSection() {
             </Button>
           </div>
         </div>
-        <div className="separator"></div>
+        <div className="vol__low__separator"></div>
       </section>
     </>
   );
