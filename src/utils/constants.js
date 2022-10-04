@@ -19,7 +19,7 @@ export const redirects = {
 };
 
 export const btns = {
-  donar: 'DONA!',
+  donar: 'DONÁ!',
   unir: 'UNITE!',
   inscribir: 'INSCRIBITE',
 };
