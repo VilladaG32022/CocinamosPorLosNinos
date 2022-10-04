@@ -55,6 +55,6 @@
 }
 
 .about__card__content:hover .about__card__overlay{
-  background-color: rgb(255, 160, 36, 50%);
+  background-color: rgba(129, 82, 21, 0.75);
   
 }
