@@ -11,7 +11,7 @@
 
 .donation__container {
   padding: 5% 15%;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/comedor1.png);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/donation_section.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -66,4 +66,10 @@
   background-color: var(--second-color);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   margin-top: 70px;
+}
+
+.don__lower__separator{
+  height: 10px;
+  background-color: var(--second-color);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }

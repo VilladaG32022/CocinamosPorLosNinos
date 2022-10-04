@@ -1,3 +1,7 @@
-.Container {
-    margin-top: 100px;
+.volunteer__page__container {
+  margin-top: 100px !important;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/volunteer_page.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
   }

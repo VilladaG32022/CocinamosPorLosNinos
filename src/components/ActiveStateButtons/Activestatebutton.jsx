@@ -6,10 +6,10 @@ import { btns } from '../../utils/constants';
 export default function ActiveStateButton() {
   return (
     <div>
-      <Button className="primary" href="/#donacion">
+      <Button className="primary" href="/donar">
         {btns.donar}
       </Button>
-      <Button className="secondary" href="/#voluntariado">
+      <Button className="secondary" href="/voluntario">
         {btns.unir}
       </Button>
     </div>

@@ -1,7 +1,13 @@
-.Container {
+.donate__page__container {
   margin-top: 100px !important;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/food.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
 }
 
 .donate__card {
   height: 30%;
+}
+
+body{
 }

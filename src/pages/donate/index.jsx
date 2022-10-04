@@ -4,7 +4,7 @@ import "../donate/style.css";
 
 export default function Donation(props) {
   return (
-    <div className="Container">
+    <div className="donate__page__container">
       <PricingContainer />
     </div>
   );
