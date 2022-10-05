@@ -1,6 +1,8 @@
 import Donation from '../pages/donate/index';
 import Home from '../pages/home/index';
 import Volunteer from '../pages/volunteer/index';
+import SuccessForm from '../pages/form/index';
+
 
 import BasicLayout from '../layouts/basiclayout';
 import Layout from '../layouts/layout';
@@ -23,6 +25,13 @@ const routesClient = [
     layout: Layout,
     path: links.VOLUNTEER,
   },
+
+  {
+    component: SuccessForm,
+    layout: BasicLayout,
+    path: links.SUCCESS,
+  }
+
 ];
 const routes = [...routesClient];
 
