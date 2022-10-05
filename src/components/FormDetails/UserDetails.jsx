@@ -68,7 +68,7 @@ const UserDetails = () => {
     <div>
       <Card className="form__card__container">
         <div className="form__header">
-          <h3 className="form__title">Formulario de Inscripcion</h3>
+          <h3 className="form__title">Formulario de Inscripción</h3>
         </div>
 
         <Card.Body className="form__card">
