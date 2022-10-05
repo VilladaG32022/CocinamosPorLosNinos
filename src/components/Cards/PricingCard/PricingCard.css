@@ -198,12 +198,14 @@
         text-align: center;
         margin: 20px;
     }
+
     .contact__title{
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
     font-weight: 600;   
+
     }
 }
 
@@ -220,15 +222,65 @@
     width: 100%;
     border-radius: 0 0 5px 5px !important;
     padding: 15px !important;
-    
-    }
-
+}    
 }
 
-@media (max-width: 492px) {
+@media (min-width: 320px) {
     .pricing__title {
-    font-size: 10px;
-        margin-top: 8px;
+    font-size: 14px;
+    margin-top: 8px;
+    }
+    .pricing__button{
+    font-size: 12px !important; 
+    margin-top: 8px;       
+    }
+    .pricing__header{
+        padding: 8px 0 8px 0 !important;
+    }
+    .contact__title{
+        font-size: 16px;
+    }
+    .donate__contact{
+        height: 40px;
+    }
+    .donate__contact:hover{
+        height: 190px;
+        background-color: var(--second-color);
+    }
+    .contact__option{
+        font-size: 12px
+    }
+}
 
+@media (min-width: 768px) {
+    .pricing__title {
+    font-size: 20px;
+    margin-top: 8px;
+    }
+    .pricing__button{
+    font-size: 16px !important; 
+    margin-top: 8px;       
+    }
+}
+
+@media (min-width: 1024px) {
+    .pricing__title {
+    font-size: 20px;
+    margin-top: 8px;
+    }
+    .pricing__button{
+    font-size: 16px !important; 
+    margin-top: 8px;       
+    }
+}
+
+@media (min-width: 1440px) {
+    .pricing__title {
+    font-size: 20px;
+    margin-top: 8px;
+    }
+    .pricing__button{
+    font-size: 16px !important; 
+    margin-top: 8px;       
     }
 }
