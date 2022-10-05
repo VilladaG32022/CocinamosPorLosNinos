@@ -2,13 +2,6 @@
 
 
 
-
-
-*{
-  font-family: var(--body-font); 
-
-}
-
 .donation__container {
   padding: 5% 15%;
   background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/donaciones1.png);
@@ -25,7 +18,7 @@
 .donation__title__bold {
   padding: 0 0 20px 0;
   color: var(--text-color);
-  font-size: 60px;
+  font-size: 3em;
   font-weight: var(--font-bold);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-bold);
@@ -72,4 +65,52 @@
   height: 10px;
   background-color: var(--second-color);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 320px){
+  .donation__title__bold {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .donation__description {
+    font-size: 12px;
+  }
+  .donation__btn{
+    margin-bottom: 30px;
+  }
+  .don__separator{
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px){
+  .donation__title__bold {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  .donation__description {
+    font-size: 16px;
+  }
+  .donation__btn{
+    margin-bottom: 30px;
+  }
+  .don__separator{
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px){
+  .donation__title__bold {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  .donation__description {
+    font-size: 18px;
+  }
+  .donation__btn{
+    margin-bottom: 30px;
+  }
+  .don__separator{
+    margin-top: 40px;
+  }
 }

@@ -13,3 +13,55 @@
   font-size: 50px;
   font-weight: var(--font-bold);
 }
+
+@media (min-width: 320px){
+  .about__title{
+    font-size: 30px;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  .about__container{
+    display: block;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px){
+  .about__title{
+    font-size: 50px;
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
+  }
+  .about__container{
+    display: block;
+    min-width: 60% !important;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px){
+  .about__title{
+    font-size: 50px;
+    margin-top: 50px !important;
+    margin-bottom: 20px;
+
+  }
+  .about__container{
+    min-width: 100% !important;
+    margin: auto;
+    display:grid;
+  }
+}
+
+@media (min-width: 1440px){
+  .about__title{
+    font-size: 50px;
+    margin-top: 50px !important;
+    margin-bottom: 20px;
+  }
+  .about__container{
+    min-width: 90% !important;
+    margin: auto;
+    display:grid;
+  }
+}

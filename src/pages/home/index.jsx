@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <>
       <HomeSection />
-      <DailySection />
-      <DonationSection />
       <AboutSection />
+      <DonationSection />
+      <DailySection />
       <VolunteerSection />
     </>
   );
