@@ -2,16 +2,9 @@
 
 
 
-
-
-*{
-  font-family: var(--body-font); 
-
-}
-
 .donation__container {
   padding: 5% 15%;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/donation_section.png);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/donaciones1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,7 +18,7 @@
 .donation__title__bold {
   padding: 0 0 20px 0;
   color: var(--text-color);
-  font-size: 60px;
+  font-size: 3em;
   font-weight: var(--font-bold);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-bold);

@@ -103,20 +103,8 @@
     background-color: var(--button-color-alt) !important;
 }
 
-.donate__row{
 
-}
 
-.caca{
-    color : var(--text-color);
-}
-
-.nav__caca {
-  width : 100%; 
-  background: var(--button-color);
-  border-radius: 0 0 5px 5px !important;
-  text-align: center;
-}
 
 .donate__span{
     color: var(--text-color);
@@ -196,4 +184,51 @@
 
 .contact__option:hover{
     background-color: var(--button-color);
+}
+
+
+@media (max-width: 576px) {
+    .donate__card__text{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .donate__text {
+        color: var(--text-color);
+        text-align: center;
+        margin: 20px;
+    }
+    .contact__title{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 600;   
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing__title {
+    font-size: 18px;
+    margin-top: 8px;
+    }
+    .pricing__button{
+    background-color: var(--button-color) !important;
+    color: var(--text-color) !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    width: 100%;
+    border-radius: 0 0 5px 5px !important;
+    padding: 15px !important;
+    
+    }
+
+}
+
+@media (max-width: 492px) {
+    .pricing__title {
+    font-size: 10px;
+        margin-top: 8px;
+
+    }
 }
