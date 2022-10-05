@@ -3,6 +3,7 @@ import { Form, Card, Button } from 'react-bootstrap';
 import validator from 'validator';
 import '../FormDetails/Form.css';
 import Axios from 'axios';
+import { max, min } from 'date-fns';
 
 const UserDetails = ({ handleFormData,  values }) => {
   //creating error state for validation

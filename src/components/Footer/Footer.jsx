@@ -48,26 +48,14 @@ export default function FooterSection(props) {
                 </a>
               </p>
             </MDBCol>
-
+            
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-              <p className="media__link">
-                <a href="https://www.facebook.com" className="text-reset">
-                <MDBIcon fab icon="facebook" className="me-3" />
-                  Nuestro Facebook
-                </a>
-              </p>
-              <p className="media__link">
-                <a href="https://www.instagram.com" className="text-reset">
-                <MDBIcon fab icon="instagram" className="me-3" />
-                  Nuestro Instagram
-                </a>
+              <p>
+                <MDBIcon icon="phone" className="me-3" />+ 351 000 0000
               </p>
               <p>
                 <MDBIcon fas icon="envelope" className="me-3" />
                 cocinamosporlosniños@gmail.com
-              </p>
-              <p>
-                <MDBIcon icon="phone" className="me-3" />+ 351 000 0000
               </p>
             </MDBCol>
           </MDBRow>

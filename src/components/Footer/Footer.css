@@ -24,7 +24,8 @@
 }
 
 .text-reset:hover{
-    color: #003835 !important;
+    color: var(--button-color-alt) !important;
+    padding: 0 0 0 5px;
 }
 
 .media__link{
