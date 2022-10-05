@@ -8,6 +8,7 @@ export const links = {
   DONATE: '/donar',
   LOGIN: '/login',
   VOLUNTEER: '/voluntario',
+  SUCCESS: '/successform',
 };
 
 export const redirects = {
