@@ -1,66 +1,52 @@
-import { React, useState, useEffect } from 'react';
-import { Form, Card, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import { React, useState } from 'react';
+import { Form, Card, Button } from 'react-bootstrap';
+import validator from 'validator';
+import '../FormDetails/Form.css';
 import Axios from 'axios';
 import { max, min } from 'date-fns';
 
-import '../FormDetails/Form.css';
+const UserDetails = ({ handleFormData,  values }) => {
+  //creating error state for validation
+  const [error, setError] = useState(false);
 
-import { validate } from '../../utils/validate';
+  const { address, firstName, dateOfBirth, lastName, email, telephone } = values;
 
-const UserDetails = () => {
-  const [input, setInput] = useState({
-    first_name: '',
-    last_name: '',
-    dateOfBirth: '',
-    email: '',
-    telephone: '',
-    neighborhood: '',
-  });
-
-  const [neighborhoods, setNeigborhoods] = useState([]);
-  const [select, setSelected] = useState('');
-
-  useEffect(() => {
-    const fetchdata = async () => {
-      const neighborhood = await Axios.get('https://deploy-hernan.herokuapp.com/Neighborhoods/');
-      setNeigborhoods(neighborhood.data);
-      console.log('Neigbors received');
-    };
-    fetchdata().catch(console.error);
-  }, []);
-
-  const [errors, setErrors] = useState({});
-  const handleInputChange = function (e) {
-    setInput({
-      ...input, //... spread operator
-      [e.target.name]: e.target.value,
-    });
+  const postData = () => {
+    Axios.post('https://deploy-hernan.herokuapp.com/Inscriptions/', {
+      first_name: firstName,
+      last_name: lastName,
+      telephone: telephone,
+      email: email,
+      dateOfBirth: dateOfBirth,
+      address: address,
+      neighborhood: 1,
+    })
+      .then((res) => {
+        console.log('Posting Data');
+      })
+      .catch((err) => {
+        console.log('Invalid Data', err);
+      });
   };
 
-  const postData = (e) => {
-    e.preventDefault();
-    setErrors(
-      validate({
-        ...input,
-        [e.target.name]: e.target.value,
-      })
-    );
 
-    if (Object.keys(errors).length === 0) {
-      Axios.post('https://deploy-hernan.herokuapp.com/Inscriptions/', {
-        first_name: input.first_name,
-        last_name: input.last_name,
-        dateOfBirth: input.dateOfBirth,
-        email: input.email,
-        telephone: input.telephone,
-        neighborhood: input.neighborhood,
-      })
-        .then((res) => {
-          console.log('Posting Data');
-        })
-        .catch((err) => {
-          console.log('Invalid Data', err);
-        });
+  // after form submit validating the form data using validator
+  const submitFormData = (e) => {
+    console.log('enviado');
+    e.preventDefault();
+
+    // checking if value of first name and last name is empty show error else take to next step
+    if (
+      validator.isEmpty(values.firstName) ||
+      validator.isEmpty(values.lastName) ||
+      validator.isEmpty(values.dateOfBirth) ||
+      validator.isEmpty(values.telephone) ||
+      validator.isEmpty(values.email) ||
+      validator.isEmpty(values.address)
+    ) {
+      setError(true);
+    } else {
+      postData();
     }
   };
 
@@ -68,49 +54,65 @@ const UserDetails = () => {
     <div>
       <Card className="form__card__container">
         <div className="form__header">
-          <h3 className="form__title">Formulario de Inscripción</h3>
+          <h3 className="form__title">Formulario de Inscripcion</h3>
         </div>
-
         <Card.Body className="form__card">
-          <Form>
+          <Form onSubmit={submitFormData}>
             <div className="form__card__labels">
               <Form.Group className="mb-3">
-                <input onChange={handleInputChange} className={`${errors.first_name && 'danger'}`} type="text" name="first_name" value={input.first_name} placeholder="Nombre" />
-                {errors.first_name && <p className="danger"> {errors.first_name} </p>}
+                <Form.Control
+                  style={{ border: error ? '2px solid red' : ' ' }}
+                  name="firstName"
+                  defaultValue={values.firstName}
+                  type="text"
+                  placeholder="Nombre "
+                  onChange={handleFormData('firstName')}
+                />
+                {error ? <Form.Text style={{ color: 'red' }}>Este campo es obligatorio</Form.Text> : ''}
               </Form.Group>
 
               <Form.Group className="mb-3">
-                <input onChange={handleInputChange} className={`${errors.last_name && 'danger'}`} type="text" name="last_name" value={input.last_name} placeholder="Apellido" />
-                {errors.last_name && <p className="danger"> {errors.last_name} </p>}
+                <Form.Control
+                  style={{ border: error ? '2px solid red' : '' }}
+                  name="lastName"
+                  defaultValue={values.lastName}
+                  ma
+                  type="text"
+                  placeholder="Apellido"
+                  onChange={handleFormData('lastName')}
+                />
+                {error ? <Form.Text style={{ color: 'red' }}>Este campo es obligatorio</Form.Text> : ''}
               </Form.Group>
 
               <Form.Group className="mb-3">
-                <input onChange={handleInputChange} className={`${errors.dateOfBirth && 'danger'}`} type="date" name="dateOfBirth" value={input.dateOfBirth} placeholder="Edad" />
-                {errors.dateOfBirth && <p className="danger"> {errors.dateOfBirth} </p>}
+                <Form.Control style={{ border: error ? '2px solid red' : '' }} defaultValue={values.dateOfBirth} type="date" name="dateOfBirth" onChange={handleFormData('dateOfBirth')} />
+                {error ? <Form.Text style={{ color: 'red' }}>Este campo es obligatorio</Form.Text> : ''}
               </Form.Group>
 
               <Form.Group className="mb-3">
-                <input onChange={handleInputChange} className={`${errors.email && 'danger'}`} type="text" name="email" value={input.email} placeholder="Email" />
-                {errors.email && <p className="danger"> {errors.email} </p>}
+                <Form.Control style={{ border: error ? '2px solid red' : '' }} defaultValue={values.email} type="email" name="email" placeholder="Email" onChange={handleFormData('email')} />
+                {error ? <Form.Text style={{ color: 'red' }}>Este campo es obligatorio</Form.Text> : ''}
               </Form.Group>
 
               <Form.Group className="mb-3">
-                <input onChange={handleInputChange} className={`${errors.telephone && 'danger'}`} type="text" name="telephone" value={input.telephone} placeholder="Telefono" />
-                {errors.telephone && <p className="danger"> {errors.telephone} </p>}
+                <Form.Control
+                  style={{ border: error ? '2px solid red' : '' }}
+                  defaultValue={values.telephone}
+                  type="phone"
+                  name="telephone"
+                  placeholder="Telefono"
+                  onChange={handleFormData('telephone')}
+                />
+                {error ? <Form.Text style={{ color: 'red' }}>Este campo es obligatorio</Form.Text> : ''}
               </Form.Group>
-{/* 
               <Form.Group className="mb-3">
-                <select onChange={handleInputChange} className={`${errors.neighborhood && 'danger'}`} type="text" name="neighborhood" value={input.neighborhood} placeholder="Barrio">
-                  {neighborhoods.map((item) => (
-                    <option value={item.id}>{item.neighborhood}</option>
-                  ))}
-                </select>
-                {errors.neighborhood && <p className="danger"> {errors.neighborhood} </p>}
+                <Form.Control defaultValue={values.address} name="address" style={{ border: error ? '2px solid red' : '' }} type="text" placeholder="Barrio" onChange={handleFormData('address')} />
+                {error ? <Form.Text style={{ color: 'red' }}>Este campo es obligatorio</Form.Text> : ''}
               </Form.Group>
-              */}
             </div>
+
             <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-              <Button className="form__button__send" type="submit" onClick={postData}>
+              <Button className="form__button__send" type="submit" onClick={submitFormData}>
                 Enviar
               </Button>
             </div>
