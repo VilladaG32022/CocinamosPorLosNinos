@@ -98,7 +98,7 @@ const UserDetails = () => {
                 <input onChange={handleInputChange} className={`${errors.telephone && 'danger'}`} type="text" name="telephone" value={input.telephone} placeholder="Telefono" />
                 {errors.telephone && <p className="danger"> {errors.telephone} </p>}
               </Form.Group>
-
+{/* 
               <Form.Group className="mb-3">
                 <select onChange={handleInputChange} className={`${errors.neighborhood && 'danger'}`} type="text" name="neighborhood" value={input.neighborhood} placeholder="Barrio">
                   {neighborhoods.map((item) => (
@@ -107,6 +107,7 @@ const UserDetails = () => {
                 </select>
                 {errors.neighborhood && <p className="danger"> {errors.neighborhood} </p>}
               </Form.Group>
+              */}
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-around' }}>
               <Button className="form__button__send" type="submit" onClick={postData}>
