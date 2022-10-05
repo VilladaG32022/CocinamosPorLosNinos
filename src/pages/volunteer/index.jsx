@@ -10,7 +10,7 @@ export default function Volunteer() {
   });
 
   return (
-    <div className="Container">
+    <div className="volunteer__page__container">
       <Form/>
     </div>
   );

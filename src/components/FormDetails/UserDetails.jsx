@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react';
 import { Form, Card, Button} from 'react-bootstrap';
 import {useNavigate} from 'react-router-dom';
 import Axios from 'axios';
+import { max, min } from 'date-fns';
 
 import '../FormDetails/Form.css';
 
@@ -73,7 +74,7 @@ const UserDetails = () => {
     <div>
       <Card className="form__card__container">
         <div className="form__header">
-          <h3 className="form__title">Formulario de Inscripcion</h3>
+          <h3 className="form__title">Formulario de Inscripción</h3>
         </div>
 
         <Card.Body className="form__card">

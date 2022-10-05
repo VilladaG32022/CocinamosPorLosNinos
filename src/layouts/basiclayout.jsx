@@ -10,9 +10,7 @@ export default function BasicLayout(props) {
   return (
     <>
       <Row>
-        <Col>
           <NavScroll />
-        </Col>
       </Row>
       <Row>{children}</Row>
       <Row>

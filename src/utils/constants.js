@@ -1,7 +1,7 @@
-import pic01 from '../assets/Img/pic01.png';
-import pic02 from '../assets/Img/pic02.png';
-import pic03 from '../assets/Img/pic03.png';
-import pic04 from '../assets/Img/pic04.png';
+import pic01 from '../assets/Img/food_yellow.png';
+import pic02 from '../assets/Img/food_grey.png';
+import pic03 from '../assets/Img/food_white.png';
+import pic04 from '../assets/Img/food_green.png';
 
 export const links = {
   HOME: '/',
@@ -20,7 +20,7 @@ export const redirects = {
 };
 
 export const btns = {
-  donar: 'DONA!',
+  donar: 'DONÁ!',
   unir: 'UNITE!',
   inscribir: 'INSCRIBITE',
 };
@@ -71,13 +71,10 @@ export const PricingSec = [
   {
     title: 'DONACIONES',
     text: (
-      <p className="pp">
-        Sabemos que es difícil comprometerse con el voluntariado porque existe mucho descreimiento y desconfianza. Por eso nos unimos familias que sólo quieren aportar un poquito que realmente es
-        muchísimo. Tu donación por más chica que sea nos brindará primero apoyo de saber que estamos por un buen camino y luego seguramente un niño más podrá alimentarse. <br></br>
-        <br></br> Las donaciones no son obligatorias ni asumen ningún compromiso futuro, seguro que siempre estaremos esperando una próxima vez, para revalidar de parte tuya que estás de acuerdo en
-        este camino que emprendemos de ahora en más juntos. <br></br>
-        <br></br> Las donaciones se pueden entregar en puntos de la ciudad en caso de querer entregarlas personalmente o las podemos pasar a buscar a través de alguno de nuestros voluntarios que se
-        encarga de dicha tarea.
+      <p className="donate__card__text">
+        Con tu aporte, por más pequeño que sea, estás poniendo un plato en la mesa de un niño. <br></br> <br></br>
+        Mediante donaciones, tanto monetarias como alimenticias, nos podes dar una mano para cumplir nuestro objetivo de ayudar a los niños que nos necesitan. <br></br> <br></br>
+        Para donar alimentos o mercaderia, contactate con nosotros o acercate a algunos de nuestros puntos.
       </p>
     ),
   },

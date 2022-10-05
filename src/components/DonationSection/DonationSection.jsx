@@ -19,7 +19,7 @@ export default function HomeSection() {
             </Button>
           </div>
         </div>
-        <div className="separator"></div>
+        <div className="don__lower__separator"></div>
       </section>
     </div>
   );
