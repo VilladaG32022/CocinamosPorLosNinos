@@ -37,3 +37,13 @@
   background-color: var(--button-color-alt);
   box-shadow: none;
 }
+
+@media (max-width: 375px){
+  .primary{
+    width: 110px;
+  }
+
+  .secondary{
+    width: 110px !important;
+  }
+}
