@@ -115,21 +115,6 @@
     font-size: 20px;
 }
 
-.slide {
-  clear:both;
-  width:100%;
-  height:0px;
-  overflow: hidden;
-  text-align: center;
-  transition: height .4s ease;
-}
-
-.slide li {padding : 20px;}
-
-#touch {position: absolute; opacity: 0; height: 0px;}    
-
-#touch:checked + .slide {height: 180px;} 
-
 
 
 .donate__contact{
