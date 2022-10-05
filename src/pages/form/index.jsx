@@ -6,7 +6,7 @@ export default function SuccessForm (props){
     return (
         <div className="container">
             <h1 className="title">
-                Hello World!
+                Form Successfully sent
             </h1>
 
         </div>

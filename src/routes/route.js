@@ -6,6 +6,7 @@ import SuccessForm from '../pages/form/index';
 
 import BasicLayout from '../layouts/basiclayout';
 import Layout from '../layouts/layout';
+import FormLayout from '../layouts/formlayout';
 
 import { links } from '../utils/constants';
 
@@ -28,7 +29,7 @@ const routesClient = [
 
   {
     component: SuccessForm,
-    layout: BasicLayout,
+    layout: FormLayout,
     path: links.SUCCESS,
   }
 
