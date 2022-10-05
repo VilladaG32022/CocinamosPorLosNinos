@@ -3,7 +3,6 @@ import Home from '../pages/home/index';
 import Volunteer from '../pages/volunteer/index';
 import SuccessForm from '../pages/form/index';
 
-
 import BasicLayout from '../layouts/basiclayout';
 import Layout from '../layouts/layout';
 import FormLayout from '../layouts/formlayout';
@@ -31,8 +30,7 @@ const routesClient = [
     component: SuccessForm,
     layout: FormLayout,
     path: links.SUCCESS,
-  }
-
+  },
 ];
 const routes = [...routesClient];
 
