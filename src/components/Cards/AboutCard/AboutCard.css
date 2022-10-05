@@ -60,3 +60,55 @@
   background-color: rgba(129, 82, 21, 0.75);
   
 }
+
+.caca{
+  margin: 0px !important;
+}
+
+@media (min-width: 320px){
+  .about__card__title {
+    font-size: 30px;
+  }
+  .about__card{
+    margin: 10px;
+  }
+  .about__card__text{
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px){
+  .about__card__title {
+    font-size: 50px;
+  }
+  .about__card{
+    margin: 50px 30px 50px 30px;
+  }
+  .about__card__text{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px){
+  .about__card__title {
+    font-size: 30px;
+  }
+  .about__card{
+    margin: 50px 30px 50px 30px;
+  }
+  .about__card__text{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1440px){
+  .about__card__title {
+    font-size: 50px;
+  }
+  .about__card{
+    margin: 30px;
+  }
+  .about__card__text{
+    font-size: 15px;
+  }
+}

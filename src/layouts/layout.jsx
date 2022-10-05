@@ -12,9 +12,7 @@ export default function Layout(props) {
   return (
     <>
       <Row>
-        <Col>
           <NavScroll />
-        </Col>
       </Row>
       <Row>{children}</Row>
       <Row>

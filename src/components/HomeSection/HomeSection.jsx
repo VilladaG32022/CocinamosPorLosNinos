@@ -10,14 +10,12 @@ export default function HomeSection() {
       <section className="home" id="home">
         <div className="home__container grid">
           <div className="home__data">
-            <div className="home__text">
               <h1 className="home__title">{HomeSec.title}</h1>
               <h1 className="home__title__bold">{HomeSec.subtitle}</h1>
               <p className="home__description">{HomeSec.text}</p>
-            </div>
-            <div className="home__btns">
+              <div className="home__btns">
               <ActiveStateButton />
-            </div>
+              </div>
           </div>
         </div>
       </section>

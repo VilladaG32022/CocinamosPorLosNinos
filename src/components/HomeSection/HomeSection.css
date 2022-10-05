@@ -2,6 +2,14 @@
   font-family: var(--body-font);
 }
 
+html{
+  
+}
+
+.home{
+  padding-right: 0px !important;
+}
+
 .home__container {
   position: relative;
   row-gap: 2.5rem;
@@ -23,10 +31,11 @@
 
 .home__text{
   height: 400px;
+  margin-left: 80px;
+  min-width: 300px;
 }
 
 .home__title {
-  padding: 60px 0 0 80px;
   color: var(--text-color);
   font-size: 50px;
   font-weight: var(--font-bold);
@@ -35,7 +44,6 @@
 }
 
 .home__title__bold {
-  padding: 0 0 20px 80px;
   color: var(--text-color);
   font-size: 50px;
   font-weight: var(--font-bold);
@@ -45,12 +53,11 @@
 }
 
 .home__description {
-  padding: 0 0 0 80px;
   font-size: 20px;
   color: var(--text-color);
-  width: 55%;
   text-shadow: 2px 2px 5px #000000;
-
+  width: 80%;
+  margin-bottom: 90px;
 }
 
 .home__price {
@@ -64,7 +71,6 @@
 .home__btns {
   display: flex;
   align-items: center;
-  padding: 10px 0 50px 80px;
 }
 
 .separator{
@@ -72,3 +78,17 @@
   background-color: var(--second-color);
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 } 
+
+@media (max-width: 576px){
+  .home__title {
+    font-size: 35px;
+  }
+  .home__title__bold{
+    font-size: 35px;
+  }
+  .home__description{
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+}

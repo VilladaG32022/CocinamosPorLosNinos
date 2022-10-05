@@ -1,5 +1,4 @@
 .header {
-  width: 100%;
   background-color: var(--first-color);
   position: fixed;
   top: 0;
@@ -7,6 +6,10 @@
   z-index: var(--z-fixed);
   /*For animation dark mode*/
   transition: 0.4s;
+}
+
+.fixed-top{
+  padding: 0px !important;
 }
 
 .nav {
@@ -17,12 +20,6 @@
 
 .me-auto{
   margin: auto;
-}
-
-.nav__logo {
-  height: 50px;
-  width: 50px;
-  margin: 10px 30px 10px 30px; /* Arriba Derecha Abajo Izquierda*/
 }
 
 .nav-link {
@@ -42,48 +39,12 @@
   color: var(--button-color-alt) !important;
 }
 
-#navbarScrollingDropdown {
-  color: var(--text-color);
-  transition: 0.3s;
-}
-
-#navbarScrollingDropdown:hover {
-  color: var(--button-color-alt) !important;
-}
-
-.dropdown-menu.show {
-  background-color: var(--text-color) !important;
-  border: none;
-}
-
-.nav__link__item {
-  color: var(--button-color-alt) !important;
-  transition: 0.3s;
-}
-
-.nav__link__item:hover {
-  background-color: var(--second-color) !important;
-}
-
-.login__btn {
-  background-color: var(--second-color) !important;
-  margin-right: 30px !important;
-  border: none !important;
-  transition: 0.3s !important;
-  visibility: hidden;
-}
-
-.btn:hover {
-  background-color: var(--button-color-alt) !important;
-}
-
-.btn:focus {
-  background-color: var(--button-color-alt) !important;
-  box-shadow: none !important;
-}
-
 .separator {
   height: 10px;
   background-color: var(--second-color);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px){
+
 }
