@@ -28,31 +28,31 @@ export const btns = {
 export const HomeSec = {
   title: 'COCINAMOS',
   subtitle: 'POR LOS NIÑOS',
-  text: 'Somos familias que nos unimos para ayudar a niños con dificultades para alimentarse. Formamos células de trabajo para poder dividir todas las tareas que realizamos y cumplir el objetivo principal: ayudar a familias que no pueden alimentar a a sus hijos',
+  text: 'Somos familias cordobesas unidas con el fin de ayudar a niños que no tienen la posibilidad de tener su plato de comida todos los dias.',
 };
 
 export const AboutSec = [
   {
     title: 'Somos CPLN',
-    text: 'Nos organizamos para poder cubrir la cuota básica de alimentación de muchos niños en diferentes zonas a través de comedores, centros vecinales, organizaciones y fundaciones. Nos unimos familias con ganas de ayudarnos a ayudar. Nuestro organigrama y roles está dividido en: Familias de voluntariado, Voluntarios de cocina, Voluntarios de gestión y donantes',
+    text: 'Nos esforzamos para poder cubrir la alimentación de niños a través de comedores, centros vecinales, organizaciones y fundaciones. Somos familias unidas con ganas de ayudar. Y nos dividimos en roles como: Voluntarios, Cocina, Gestión y Donantes',
     src: pic01,
   },
 
   {
     title: 'Que hacemos',
-    text: 'Desarrollamos Menús que podemos cocinar en diferentes casas de las familias participantes. Se determina una célula de trabajo la que se organiza según necesidad y disponibilidad de los integrantes. Cada menú tiene un desarrollo de receta, ingredientes y cocción para luego sistematizar el embalaje y envío al destino. Cada uno de los menús tiene aportes de carnes y vegetales para cubrir una dieta lo mas completa posible en cada entrega',
+    text: 'Creamos menús para que las familias sean capaces de cocinar en sus casas. Determinamos células de trabajo que organizamos según la necesidad y disponibilidad de los integrantes. Receta, ingredientes y cocción es el proceso por donde pasa el menú para luego sistematizar el embalaje y envío al destino.',
     src: pic02,
   },
 
   {
     title: 'Servicios',
-    text: 'Toda nuestra comunidad de familias colabora y brinda sus servicios para que se logren los objetivos de la organización entre los que contamos: Apoyo alimentario a niños de diferentes zonas de Córdoba. Ayuda en reparación o refuncionalización de comedores. Entrega de elementos para poder alimentar a los niños. Generación de charlas informativas a familias e integrantes del equipo. Charlas informativas a organizadores comunitarios de comedores, clubres capillas, etc ',
+    text: 'Con las familias colaboramos y brindamos servicios para lograr los objetivos de la organización: Apoyo alimenticio a niños de diferentes zonas de Córdoba. Reparación y refuncionalización de los comedores. Logística de elementos para poder alimentar a los niños. Charlas informativas a familias y voluntarios.',
     src: pic03,
   },
 
   {
     title: 'Contacto',
-    text: 'Tu interés nos hace más fuertes y nos ayudará a que muchos chicos crezcan y se desarrollen. Esperamos tu consulta.',
+    text: '',
     src: pic04,
   },
 ];
