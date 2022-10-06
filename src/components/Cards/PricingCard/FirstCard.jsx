@@ -22,7 +22,7 @@ export default function App(props) {
               <h2 className='contact__title'>CONTACTATE CON NOSOTROS <MDBIcon fas icon="caret-down" className="me-3 contact__icon" /></h2>
               <p className='contact__option'>
                 <MDBIcon icon="phone" className="me-3"/>
-                + 351 000 0000
+                + 351 621 9319
               </p> 
               <p className='contact__option'>
                 <MDBIcon fas icon="envelope" className="me-3"/>
@@ -30,11 +30,11 @@ export default function App(props) {
               </p>
               <p className='contact__option'>
                 <MDBIcon fas icon="home" className="me-3"/>
-                Dirección 1
+                Coronel Juan Beverina 2068
               </p>
               <p className='contact__option'>
                 <MDBIcon fas icon="home" className="me-3"/>
-                Dirección 2
+                Barrio Jardin Claret M24 L4
               </p>
             </div>
         </MDBCard>
