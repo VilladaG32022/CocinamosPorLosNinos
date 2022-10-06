@@ -48,7 +48,7 @@ const UserDetails = () => {
       })
       );
       
-      if (Object.keys(errors).length > 0) {
+      if (Object.keys(errors).length === 0) {
         Axios.post('https://deploy-hernan.herokuapp.com/Inscriptions/', {
           first_name: input.first_name,
           last_name: input.last_name,
@@ -106,9 +106,12 @@ const UserDetails = () => {
               </Form.Group>
 
               <Form.Group className="mb-3">
+                
                 <select onChange={handleInputChange} className={`${errors.neighborhood && 'danger'}`} type="text" name="neighborhood" value={input.neighborhood} placeholder="Barrio">
                   {neighborhoods.map((item) => (
-                    <option value={item.id}>{item.neighborhood}</option>
+                    
+                    <option value={item.id}>
+                      {item.neighborhood}</option>
                   ))}
                 </select>
                 {errors.neighborhood && <p className="danger"> {errors.neighborhood} </p>}
