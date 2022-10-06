@@ -10,7 +10,13 @@ export function validate(input) {
   }
   if (!input.dateOfBirth) {
     errors.dateOfBirth = 'Date of Birth is required';
-  }
+
+  }/* else if (input.dateOfBirth < 18) {
+        // Or an object if the translation messages need parameters
+        errors.dateOfBirth = {
+            message: 'ra.validation.minValue',
+            args: { min: 18 }
+        }; */
   if (!input.email) {
     errors.email = 'Email is required';
   }

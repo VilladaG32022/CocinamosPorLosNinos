@@ -81,3 +81,35 @@
     transform: rotate(360deg);
   }
 }
+
+.validate__container{
+  margin: auto !important;
+}
+
+.validate__card{
+  margin: auto;
+  margin-top: 300px;
+  background-color: var(--first-color);
+  width: 30%;
+  padding: 0px;
+  color: var(--text-color);
+  border-radius: 6px !important;
+
+}
+
+.validate__title{
+  background-color: var(--button-color);
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.validate__card-text{
+  text-align: center;
+}
+
+.validate__card-link{
+  justify-content: center;
+  align-items: center;
+  display:grid;
+}
