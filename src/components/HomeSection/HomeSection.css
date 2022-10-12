@@ -2,17 +2,12 @@
   font-family: var(--body-font);
 }
 
-html{
-  
-}
-
 .home{
   padding-right: 0px !important;
 }
 
 .home__container {
   position: relative;
-  row-gap: 2.5rem;
   background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/home1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,12 +16,8 @@ html{
   width: 100%;
 }
 
-.home__img {
-  width: 100%;
-}
-
 .home__data{
-  padding: 40px;
+  padding: 80px;
 }
 
 .home__text{
@@ -91,4 +82,24 @@ html{
     width: 100%;
     margin-bottom: 70px;
   }
+}
+
+@media (min-width: 320px){
+  .home__container{
+    margin-top: 60px;
+  }
+  .home__data{
+    padding: 50px;
+  }
+  
+}
+
+@media (min-width: 1024px){
+  .home__container{
+    margin-top: 100px;
+  }
+  .home__data{
+    padding: 80px;
+  }
+  
 }

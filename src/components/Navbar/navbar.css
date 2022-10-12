@@ -88,5 +88,9 @@
     background-color: var(--button-color-alt);
     color: var(--text-color) !important;
   }
+  .nav {
+    height: 70px;
+    margin-bottom: -100px;
+  }
 
 }

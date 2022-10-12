@@ -17,17 +17,17 @@ export default function NavScroll() {
             <Nav.Link className="nav__link" href={redirects.home}>
               Inicio
             </Nav.Link>
-            <Nav.Link className="nav__link" href={redirects.news}>
-              Novedades
-            </Nav.Link>
-            <Nav.Link className="nav__link" href={redirects.volunteer}>
-              Voluntariado
-            </Nav.Link>
             <Nav.Link className="nav__link" href={redirects.about}>
               Nosotros
             </Nav.Link>
             <Nav.Link className="nav__link" href={redirects.donate}>
               Donaciones
+            </Nav.Link>
+            <Nav.Link className="nav__link" href={redirects.news}>
+              Novedades
+            </Nav.Link>
+            <Nav.Link className="nav__link" href={redirects.volunteer}>
+              Voluntariado
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

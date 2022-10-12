@@ -41,7 +41,7 @@ export default function ControlledCarousel() {
         id="news_section"
       >
         <Carousel.Item>
-          <div className="cardcontainer">
+          <div className="card__container">
 
           {cardList && cardList.map(card =>(
 

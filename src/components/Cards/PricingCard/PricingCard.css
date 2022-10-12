@@ -171,49 +171,67 @@
     background-color: var(--button-color);
 }
 
+@media (min-width: 320px) {
+    .pricing__title {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .pricing__button{
+        font-size: 12px !important; 
+        margin-top: 8px;       
+    }
+    .pricing__header{
+        padding: 8px 0 8px 0 !important;
+    }
+    .contact__title{
+        font-size: 16px;
+    }
+    .donate__contact{
+        height: 40px;
+    }
+    .donate__contact:hover{
+        height: 190px;
+        background-color: var(--second-color);
+    }
+    .contact__option{
+        font-size: 12px
+    }
+}
 
-@media (max-width: 576px) {
+
+@media (min-width: 576px) {
+    .contact__title{
+        font-size: 1px;
+    }
+    .donate__contact{
+        height: 60px;
+    }
     .donate__card__text{
         font-size: 18px;
         text-align: left;
         margin-bottom: 40px;
     }
     .donate__text {
-        color: var(--text-color);
         text-align: center;
         margin: 20px;
     }
     .contact__title{
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-weight: 600;   
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-weight: 600;   
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .pricing__title {
-    font-size: 18px;
-    margin-top: 8px;
+        font-size: 18px;
+        margin-top: 8px;
     }
     .pricing__button{
-    background-color: var(--button-color) !important;
-    color: var(--text-color) !important;
-    font-size: 10px !important;
-    font-weight: 700 !important;
-    width: 100%;
-    border-radius: 0 0 5px 5px !important;
-    padding: 15px !important;
-    
-    }
-
-}
-
-@media (max-width: 492px) {
-    .pricing__title {
-    font-size: 10px;
-        margin-top: 8px;
-
-    }
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        width: 100%;
+    }    
 }
