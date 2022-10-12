@@ -17,6 +17,9 @@ export default function NavScroll() {
             <Nav.Link className="nav__link" href={redirects.home}>
               Inicio
             </Nav.Link>
+            <Nav.Link className="nav__link" href={redirects.volunteer}>
+              Voluntariado
+            </Nav.Link>
             <Nav.Link className="nav__link" href={redirects.about}>
               Nosotros
             </Nav.Link>
