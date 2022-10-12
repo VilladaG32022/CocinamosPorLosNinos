@@ -2,6 +2,17 @@
   margin-top: 100px !important;
   background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../../assets/Img/volunteer_page.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+}
 
+@media (min-width: 320px) {
+  .volunteer__page__container{
+    background-size: cover;
+    margin-top: 50px !important;
   }
+}
+
+@media (min-width: 1024px) {
+  .volunteer__page__container{
+    margin-top: 100px !important;
+  }
+}
