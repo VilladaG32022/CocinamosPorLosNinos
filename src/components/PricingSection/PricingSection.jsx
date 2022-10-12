@@ -10,7 +10,7 @@ export default function PricingContainer(props) {
       <MDBRow className="donate__row">
         <FirstCard btntext="Contacto" />
       </MDBRow>
-      <div className='pricing__card__container'>
+      <div className="pricing__card__container">
         <MDBRow className="donate__row">
           <MDBCol>
             <Card btntext="$200" mp="https://mpago.la/2XwVD3a" />
