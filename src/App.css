@@ -82,34 +82,34 @@
   }
 }
 
-.validate__container{
-  margin: auto !important;
-}
-
 .validate__card{
   margin: auto;
-  margin-top: 300px;
   background-color: var(--first-color);
   width: 30%;
   padding: 0px;
   color: var(--text-color);
-  border-radius: 6px !important;
-
+  border-radius: 10px;
+  min-width: 300px;
+  margin-top: 200px;
 }
 
 .validate__title{
   background-color: var(--button-color);
-  padding: 25px;
+  padding: 30px;
   width: 100%;
   text-align: center;
+  border-radius: 6px 6px 0 0;
+  font-weight: 700;
 }
 
-.validate__card-text{
+.validate__card__text{
+  font-size: 20px;
   text-align: center;
+  margin: 20px;
 }
 
-.validate__card-link{
-  justify-content: center;
-  align-items: center;
-  display:grid;
+.validate__card__button{
+  width: 100%;
+  border-radius: 0 0 6px 6px;
+  font-size: 24px;
 }
