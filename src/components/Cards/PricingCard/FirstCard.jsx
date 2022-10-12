@@ -34,7 +34,7 @@ export default function App(props) {
               </p>
               <p className='contact__option'>
                 <MDBIcon fas icon="home" className="me-3"/>
-                Barrio Jardin Claret M24 L4
+                Barrio Jardin Claret M24 LTE 4
               </p>
             </div>
         </MDBCard>

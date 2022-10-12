@@ -51,7 +51,7 @@ export default function FooterSection(props) {
             
             <MDBCol md="4" lg="3" xl="3" className="footer__col__contact mx-auto mb-md-0 mb-4">
               <p>
-                <MDBIcon icon="phone" className="me-3" />+ 351 000 0000
+                <MDBIcon icon="phone" className="me-3" />+ 351 621 9319
               </p>
               <p>
                 <MDBIcon fas icon="envelope" className="me-3" />
