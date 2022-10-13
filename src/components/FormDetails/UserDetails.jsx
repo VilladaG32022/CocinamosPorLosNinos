@@ -48,7 +48,7 @@ const UserDetails = () => {
       })
       );
       
-      if (Object.keys(errors).length === 0) {
+      if (Object.keys(errors).length !== 6) {
         Axios.post('https://deploy-hernan.herokuapp.com/Inscriptions/', {
           first_name: input.first_name,
           last_name: input.last_name,
@@ -67,6 +67,8 @@ const UserDetails = () => {
         });
       }
   };
+
+
 
 
 
