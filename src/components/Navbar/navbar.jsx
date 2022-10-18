@@ -10,8 +10,8 @@ import logo_cuenco_favicon from '../../assets/Img/favicon/android-chrome-192x192
 export default function NavScroll() {
   return (
     <div className="fixed-top">
-      <Navbar className="nav" expand="lg">  
-        <Navbar.Toggle aria-controls="navbarScroll" />
+      <Navbar className="nav" expand="lg" collapseOnSelect>  
+        <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll"/>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
             <Nav.Link className="nav__link" href={redirects.home}>

@@ -50,6 +50,10 @@
   background-color: var() !important;
 }
 
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
 .navbar-toggler-icon{
   color: var(--text-color) !important;
   font-size: 30px;
@@ -65,27 +69,26 @@
     transform: rotate(90deg);
 }
 
-.navbar-toggler-icon:focus{
-  border: none !important;
-}
 
 @media (max-width: 768px){
   .navbar-nav-scroll{
-    background-color: var(--second-color);
-    width: 250px;
+    background-color: var(--button-color-alt);
+    width: 100%;
     margin: 0px;
     max-height: none !important;
-    border-radius: 0 12px 12px 0;
   }
   .nav-link{
-    padding: 10px !important;
-    margin: 0px;
+    padding: 25px !important;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+        
   }
   .nav-link:hover {
     color: var(--button-color-alt) !important;
     padding-top: 0px;
     font-size: 20px !important;
-    background-color: var(--button-color-alt);
+    background-color: var(--second-color);
     color: var(--text-color) !important;
   }
   .nav {

@@ -82,10 +82,11 @@
 
 @media (max-width: 576px){
   .home__title {
-    font-size: 35px;
+    font-size: 30px;
+    margin-bottom: 0px;
   }
   .home__title__bold{
-    font-size: 35px;
+    font-size: 25px;
   }
   .home__description{
     font-size: 14px;
@@ -93,7 +94,8 @@
     margin-bottom: 70px;
   }
   .home__logo{
-    height: 70px;
+    height: 55px;
+    margin-right: 10px;
   }
 }
 

@@ -77,15 +77,9 @@
   
 .donate__text {
     color: var(--text-color);
-    text-align: center;
-    margin: 40px 50px 40px 50px;
-}
-
-.donate__card__text{
-    margin: 0;
     text-align: left;
-    font-size: 20px;
-    margin-bottom: 40px;
+    margin: 10px 15px 10px 15px;
+    font-size: 15px;
 }
 
 .donate__button{
@@ -206,13 +200,14 @@
         background-color: var(--second-color);
     }
     .donate__card__text{
-        font-size: 18px;
+        font-size: 11px;
         text-align: left;
         margin-bottom: 40px;
     }
     .donate__text {
         text-align: center;
         margin: 20px;
+        font-size: 14px;
     }
     .contact__title{
         font-size: 20px;
