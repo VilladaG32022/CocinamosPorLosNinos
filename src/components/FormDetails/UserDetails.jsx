@@ -14,6 +14,7 @@ const UserDetails = () => {
     dateOfBirth: '',
     email: '',
     telephone: '',
+    status:"P",
     neighborhood: '',
   });
 
@@ -43,12 +44,14 @@ const UserDetails = () => {
     e.preventDefault();
     setErrors(
       validate({
-        ...errors,
+        ...input,
         [e.target.name]: e.target.value,
       })
     );
 
     if (Object.keys(errors).length === 0) {
+
+      console.table(input)
       Axios.post('https://deploy-hernan.herokuapp.com/Inscriptions/', {
         first_name: input.first_name,
         last_name: input.last_name,
@@ -58,8 +61,7 @@ const UserDetails = () => {
         neighborhood: input.neighborhood,
       })
         .then((res) => {
-          console.log('Posting Data');
-          navigate('/successform');
+          console.log('Posting Data',res);
         })
         .catch((err) => {
           console.log('Invalid Data', err);
