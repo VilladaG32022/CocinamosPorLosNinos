@@ -80,6 +80,7 @@
     text-align: left;
     margin: 10px 15px 10px 15px;
     font-size: 15px;
+    
 }
 
 .donate__button{
@@ -199,13 +200,8 @@
         height: 195px;
         background-color: var(--second-color);
     }
-    .donate__card__text{
-        font-size: 11px;
-        text-align: left;
-        margin-bottom: 40px;
-    }
     .donate__text {
-        text-align: center;
+        text-align: left;
         margin: 20px;
         font-size: 14px;
     }
@@ -228,10 +224,16 @@
         font-weight: 700 !important;
         width: 100%;
     }    
+    .donate__text {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1024px) {
     .donate__contact{
         height: 50px;
     }  
+    .donate__text {
+        font-size: 25px;
+    }
 }
