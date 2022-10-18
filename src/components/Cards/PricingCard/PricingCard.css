@@ -103,9 +103,6 @@
     background-color: var(--button-color-alt) !important;
 }
 
-
-
-
 .donate__span{
     color: var(--text-color);
     padding: 20px 40% 20px 40%;
@@ -114,8 +111,6 @@
     font-weight: 700;
     font-size: 20px;
 }
-
-
 
 .donate__contact{
     background-color: var(--button-color);
@@ -190,7 +185,7 @@
         height: 40px;
     }
     .donate__contact:hover{
-        height: 190px;
+        height: 192px;
         background-color: var(--second-color);
     }
     .contact__option{
@@ -204,7 +199,11 @@
         font-size: 1px;
     }
     .donate__contact{
-        height: 60px;
+        height: 48px;
+    }
+    .donate__contact:hover{
+        height: 195px;
+        background-color: var(--second-color);
     }
     .donate__card__text{
         font-size: 18px;
@@ -234,4 +233,10 @@
         font-weight: 700 !important;
         width: 100%;
     }    
+}
+
+@media (min-width: 1024px) {
+    .donate__contact{
+        height: 50px;
+    }  
 }

@@ -9,3 +9,16 @@
   height: 30%;
 }
 
+@media (min-width: 320px) {
+  .donate__page__container{
+    background-size: cover;
+    margin-top: 50px !important;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .donate__page__container{
+    margin-top: 100px !important;
+  }
+}

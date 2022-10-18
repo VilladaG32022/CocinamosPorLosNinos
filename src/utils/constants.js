@@ -76,12 +76,12 @@ export const AboutSec = [
 
 export const VolunteerSec = {
   title: 'VOLUNTARIADO',
-  text: 'Ayudamos porque sabemos el porqué ayudamos y a quienes ayudamos. Cada integrante de este grupo de familias es consciente y sabe cuando se está ayudando a las infancias de una zona o con alguna problemática en particular. Partimos de lo básico, el alimento que le permitirá a esos niños adquirir y retener conocimientos y poder desarrollarse físicamente.',
+  text: 'Cocinamos por los niños porque sabemos que nos necesitan. Todos los integrantes de CPLN son conscientes del apoyo que brindan a los infantes a los que ayudan. Y partimos de lo básico que es que el alimento permite a los niños desarrollarse física y emocionalmente para poder tener una educación y vida sana.',
 };
 
 export const DonateSec = {
   title: 'DONACIONES',
-  text: 'Sabemos que es difícil comprometerse con el voluntariado porque existe mucho descreimiento y desconfianza. Por eso nos unimos familias que sólo quieren aportar un poquito que realmente es muchísimo . Tu donación por más chica que sea nos brindará primero apoyo de saber que estamos por un buen camino y luego seguramente un niño más podrá alimentarse. Las donaciones no son obligatorias ni asumen ningún compromiso futuro, seguro que siempre estaremos esperando una próxima vez, para revalidar de parte tuya que estás de acuerdo en este camino que emprendemos de ahora en más juntos.',
+  text: 'Sabemos desde el principio que comprometerse con el voluntariado no es fácil. Por eso siempre les decimos a las familias que con sólo un poquito, están aportando mucho. Sea cual sea tu donación, parezca pequeña o grande, nos brinda, primero, más niños con un plato de comida en su mesa y segundo un mensaje de que vamos por un buen camino. Las donaciones no asumen ningún tipo de compromiso futuro, aunque siempre estaremos esperando una próxima vez, para revalidar que estás de acuerdo con lo que hacemos y desde que donas, pasas a ser parte de CPLN.',
 };
 
 export const PricingSec = [
