@@ -14,7 +14,7 @@ const UserDetails = () => {
     dateOfBirth: '',
     email: '',
     telephone: '',
-    status:"P",
+    status: 'P',
     neighborhood: '',
   });
 
@@ -50,18 +50,19 @@ const UserDetails = () => {
     );
 
     if (Object.keys(errors).length === 0) {
-
-      console.table(input)
+      console.table(input);
       Axios.post('https://deploy-hernan.herokuapp.com/Inscriptions/', {
         first_name: input.first_name,
         last_name: input.last_name,
         dateOfBirth: input.dateOfBirth,
         email: input.email,
         telephone: input.telephone,
+        status: 'P',
         neighborhood: input.neighborhood,
       })
         .then((res) => {
-          console.log('Posting Data',res);
+          navigate('/successform');
+          console.log('Posting Data', res);
         })
         .catch((err) => {
           console.log('Invalid Data', err);
@@ -108,7 +109,7 @@ const UserDetails = () => {
               <Form.Group className="mb-3">
                 <select onChange={handleInputChange} className={`${errors.neighborhood && 'danger'}`} type="text" name="neighborhood" value={input.neighborhood} placeholder="Barrio">
                   {neighborhoods.map((item) => (
-                    <option key={item.id}>{item.neighborhood}</option>
+                    <option value={item.id}>{item.neighborhood}</option>
                   ))}
                 </select>
                 {errors.neighborhood && <p className="danger"> {errors.neighborhood} </p>}
