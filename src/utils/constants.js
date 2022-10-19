@@ -4,7 +4,6 @@ import pic03 from '../assets/Img/food_white.png';
 import pic04 from '../assets/Img/food_green.png';
 import { MDBIcon } from 'mdb-react-ui-kit';
 
-
 export const links = {
   HOME: '/',
   DONATE: '/donar',
@@ -54,22 +53,25 @@ export const AboutSec = [
 
   {
     title: 'Contacto',
-    text: <div><p className='about__option'>
-    <MDBIcon icon="phone" className="me-3"/>
-    + 351 621 9319
-  </p> 
-  <p className='about__option'>
-    <MDBIcon fas icon="envelope" className="me-3"/>
-    cocinamosporlosniños@gmail.com
-  </p>
-  <p className='about__option'>
-    <MDBIcon fas icon="home" className="me-3"/>
-    Coronel Juan Beverina 2068
-  </p>
-  <p className='about__option'>
-    <MDBIcon fas icon="home" className="me-3"/>
-    Barrio Jardin Claret M24 L4
-  </p></div>,
+    text: (
+      <div>
+        <a className="about__option">
+          <MDBIcon icon="phone" className="me-3" href="tel:3516219319" />+ 351 621 9319
+        </a>
+        <p className="about__option">
+          <MDBIcon fas icon="envelope" className="me-3" />
+          cocinamosporlosniños@gmail.com
+        </p>
+        <p className="about__option">
+          <MDBIcon fas icon="home" className="me-3" />
+          Coronel Juan Beverina 2068
+        </p>
+        <p className="about__option">
+          <MDBIcon fas icon="home" className="me-3" />
+          Barrio Jardin Claret M24 L4
+        </p>
+      </div>
+    ),
     src: pic04,
   },
 ];
@@ -88,7 +90,7 @@ export const PricingSec = [
   {
     title: 'DONACIONES',
     text: (
-      <p className="donate__card__text">
+      <p>
         Con tu aporte, por más pequeño que sea, estás poniendo un plato en la mesa de un niño. <br></br> <br></br>
         Mediante donaciones, tanto monetarias como alimenticias, nos podes dar una mano para cumplir nuestro objetivo de ayudar a los niños que nos necesitan. <br></br> <br></br>
         Para donar alimentos o mercaderia, contactate con nosotros o acercate a algunos de nuestros puntos.
