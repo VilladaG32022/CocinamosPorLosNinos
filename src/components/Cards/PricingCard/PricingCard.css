@@ -124,7 +124,7 @@
     transition: 1.5s;
   }
 
-.donate__contact:active{
+.donate__contact:hover{
     height: 225px;
     background-color: var(--second-color);
 }
@@ -141,6 +141,14 @@
     transition: .3s;
 }
 
+.donate__contact:hover .contact__icon{
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+ }
 
 .contact__option{
     width: 100%;
@@ -171,7 +179,7 @@
     .donate__contact{
         height: 40px;
     }
-    .donate__contact:active{
+    .donate__contact:hover{
         height: 192px;
         background-color: var(--second-color);
     }
@@ -188,7 +196,7 @@
     .donate__contact{
         height: 48px;
     }
-    .donate__contact:active{
+    .donate__contact:hover{
         height: 195px;
         background-color: var(--second-color);
     }
@@ -218,10 +226,6 @@
     }    
     .donate__text {
         font-size: 18px;
-    }
-    .donate__contact:hover{
-        height: 195px;
-        background-color: var(--second-color);
     }
 }
 
