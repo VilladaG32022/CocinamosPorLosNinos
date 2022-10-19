@@ -4,7 +4,6 @@ import pic03 from '../assets/Img/food_white.png';
 import pic04 from '../assets/Img/food_green.png';
 import { MDBIcon } from 'mdb-react-ui-kit';
 
-
 export const links = {
   HOME: '/',
   DONATE: '/donar',
