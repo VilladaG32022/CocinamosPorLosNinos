@@ -55,9 +55,9 @@ export const AboutSec = [
     title: 'Contacto',
     text: (
       <div>
-        <p className="about__option">
+        <a className="about__option">
           <MDBIcon icon="phone" className="me-3" href="tel:3516219319" />+ 351 621 9319
-        </p>
+        </a>
         <p className="about__option">
           <MDBIcon fas icon="envelope" className="me-3" />
           cocinamosporlosniños@gmail.com
