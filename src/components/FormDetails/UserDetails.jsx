@@ -6,6 +6,7 @@ import Axios from 'axios';
 import '../FormDetails/Form.css';
 
 import { validate } from '../../utils/validate';
+import { links } from '../../utils/constants';
 
 const UserDetails = () => {
   const [input, setInput] = useState({
@@ -24,7 +25,7 @@ const UserDetails = () => {
     const fetchData = async () => {
       const neighborhood = await Axios.get('https://deploy-hernan.herokuapp.com/Neighborhoods/');
       setNeighborhoods(neighborhood.data);
-      console.log('Neigbors received');
+      console.log('Neighbors received');
     };
     fetchData().catch(console.error);
   }, []);
@@ -61,7 +62,7 @@ const UserDetails = () => {
         neighborhood: input.neighborhood,
       })
         .then((res) => {
-          navigate('/successform');
+          navigate(links.SUCCESS);
           console.log('Posting Data', res);
         })
         .catch((err) => {
@@ -92,7 +93,16 @@ const UserDetails = () => {
               </Form.Group>
 
               <Form.Group className="mb-3">
-                <input onChange={handleInputChange} className={`${errors.dateOfBirth && 'danger'}`} type="date" name="dateOfBirth" value={input.dateOfBirth} placeholder="Edad" />
+                <input
+                  onChange={handleInputChange}
+                  className={`${errors.dateOfBirth && 'danger'}`}
+                  type="text"
+                  onFocus={(e) => (e.target.type = 'date')}
+                  onBlur={(e) => (e.target.type = 'text')}
+                  name="dateOfBirth"
+                  value={input.dateOfBirth}
+                  placeholder="Fecha de Nacimiento"
+                />
                 {errors.dateOfBirth && <p className="danger"> {errors.dateOfBirth} </p>}
               </Form.Group>
 
@@ -108,6 +118,7 @@ const UserDetails = () => {
 
               <Form.Group className="mb-3">
                 <select onChange={handleInputChange} className={`${errors.neighborhood && 'danger'}`} type="text" name="neighborhood" value={input.neighborhood} placeholder="Barrio">
+                  <option value={0}>Barrio</option>
                   {neighborhoods.map((item) => (
                     <option value={item.id}>{item.neighborhood}</option>
                   ))}
