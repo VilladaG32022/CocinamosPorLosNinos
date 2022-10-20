@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { redirects } from '../../utils/constants';
 
 import '../Navbar/navbar.css';
-import logo_cuenco_favicon from '../../assets/Img/favicon/android-chrome-192x192.png';
+
 
 export default function NavScroll() {
   return (
