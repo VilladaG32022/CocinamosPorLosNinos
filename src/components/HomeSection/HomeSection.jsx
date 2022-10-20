@@ -1,7 +1,6 @@
 import React from 'react';
 import ActiveStateButton from '../ActiveStateButtons/Activestatebutton';
 import logo_cuenco_favicon from '../../assets/Img/favicon/android-chrome-192x192.png';
-import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 
 import { HomeSec } from '../../utils/constants';

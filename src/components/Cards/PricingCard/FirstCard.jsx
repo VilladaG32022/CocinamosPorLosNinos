@@ -7,7 +7,6 @@ import { PricingSec } from '../../../utils/constants';
 
 
 export default function App(props) {
-  const { btntext} = props;
   return (
     <div>
         {PricingSec.map((label) => (

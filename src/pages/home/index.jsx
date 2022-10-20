@@ -12,6 +12,7 @@ export default function Home() {
       <HomeSection />
       <AboutSection />
       <DonationSection />
+      <DailySection /> 
       <VolunteerSection />
     </>
   );
