@@ -20,7 +20,7 @@ const UserDetails = () => {
   });
 
   const [neighborhoods, setNeighborhoods] = useState([]);
-
+ 
   useEffect(() => {
     const fetchData = async () => {
       const neighborhood = await Axios.get('https://deploy-hernan.herokuapp.com/Neighborhoods/');
