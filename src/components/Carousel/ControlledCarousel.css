@@ -7,6 +7,13 @@
   display: inline;
 }
 
+.carousel{
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  
+}
+
 .cardcontainer {
   display: flex;
 }
