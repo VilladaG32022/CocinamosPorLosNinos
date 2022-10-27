@@ -66,3 +66,55 @@
   border-radius: 2px;
   padding: 10px;
 }
+
+
+@media (min-width: 767px){
+  .form__card__container {
+    width: 100% !important;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(0, 0, 0, 0) !important;
+  }
+  .form__header {
+    height: 100px;
+    background-color: var(--second-color);
+    border: 0 0 5px 0;
+    border-color: var(--text-color);
+    border-radius: 5px 5px 0 0;
+  }
+
+  .form__title {
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 992px){
+  .form__card__container {
+    width: 100% !important;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(0, 0, 0, 0) !important;
+  }
+
+  .form__header {
+    height: 70px;
+    background-color: var(--second-color);
+    border: 0 0 5px 0;
+    border-color: var(--text-color);
+    border-radius: 5px 5px 0 0;
+  }
+
+
+  .form__title {
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-weight: 600;
+  }
+
+}
