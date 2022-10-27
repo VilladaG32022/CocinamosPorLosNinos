@@ -3,27 +3,22 @@ export function validate(input) {
   console.log(input);
 
   if (!input.first_name) {
-    errors.first_name = 'Este campo es obligatorio';
+    errors.first_name = 'Nombre es un requerimiento';
   }
   if (!input.last_name) {
-    errors.last_name = 'Este campo es obligatorio';
+    errors.last_name = 'Apellido es un requerimiento';
   }
   if (!input.dateOfBirth) {
-    errors.dateOfBirth = 'Este campo es obligatorio';
-  } /* else if (input.dateOfBirth < 18) {
-          // Or an object if the translation messages need parameters
-          errors.dateOfBirth = {
-              message: 'ra.validation.minValue',
-              args: { min: 18 }
-          }; */
+    errors.dateOfBirth = 'Fecha de nacimiento es un requerimiento';
+  }
   if (!input.email) {
-    errors.email = 'Este campo es obligatorio';
+    errors.email = 'Email es un requerimiento';
   }
   if (!input.telephone) {
-    errors.telephone = 'Este campo es obligatorio';
+    errors.telephone = 'Telefono es un requerimiento';
   }
   if (!input.neighborhood) {
-    errors.neighborhood = 'Este campo es obligatorio';
+    errors.neighborhood = 'Barrio es un requerimiento';
   }
   return errors;
 }
