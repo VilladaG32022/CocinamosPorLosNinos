@@ -1,20 +1,15 @@
-
-.carousel__items {
-  
-}
-
 .a {
   display: inline;
 }
 
-.carousel{
+.Carousel{
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   
 }
 
-.cardcontainer {
+.cardContainer {
   display: flex;
 }
 

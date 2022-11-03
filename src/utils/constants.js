@@ -1,7 +1,7 @@
-import pic01 from '../assets/Img/food_yellow.png';
-import pic02 from '../assets/Img/food_grey.png';
-import pic03 from '../assets/Img/food_white.png';
-import pic04 from '../assets/Img/food_green.png';
+import pic01 from '../assets/Img/food_yellow.webp';
+import pic02 from '../assets/Img/food_grey.webp';
+import pic03 from '../assets/Img/food_white.webp';
+import pic04 from '../assets/Img/food_green.webp';
 import { MDBIcon } from 'mdb-react-ui-kit';
 
 export const links = {
