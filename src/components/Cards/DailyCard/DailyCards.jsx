@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import '../DailyCard/DailyCards.css';
+import { MDBIcon } from 'mdb-react-ui-kit';
+
 
 export default function DailyCard(props) {
   const { title, card } = props;
@@ -29,18 +31,18 @@ console.log(props)
     return (
       <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header>
+        <Button onClick={props.onHide} className='modal__close'>
+          <MDBIcon fas icon="times-circle" />
+        </Button>
           <Card.Img className="modal__img" src={card.img} alt='img no encontrada' />
         </Modal.Header>
+        <div className="modal__separator"></div>
         <Modal.Body>
           <Modal.Title className="modal__title" id="contained-modal-title-vcenter">
             {title}
           </Modal.Title>
           <p className="modal__text">{card.description}</p>
         </Modal.Body>
-        <div className="modal__separator"></div>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
       </Modal>
     );
   }

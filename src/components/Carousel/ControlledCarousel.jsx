@@ -25,26 +25,26 @@ export default function ControlledCarousel() {
   }, []);
 
   const nodePairs = cardList.reduce((result, value, index, array) => {
-    if (index % 2 === 0) result.push(array.slice(index, index + 2));
+    if (index % 2 === 0) result.push(array.slice(index, index + 3));
     return result;
   }, []);
 
   return (
     <div id="news_section">
-      <h1 className="about__title" id="about_section">
+      <h1 className="daily__title" id="daily_section">
         Novedades
       </h1>
-      <div className="carouselContainer">
-        <Carousel className="Carousel" activeIndex={index} onSelect={handleSelect}>
+        <Carousel className="carousel__container" activeIndex={index} onSelect={handleSelect}>
           {nodePairs.map((pair) => (
-            <Carousel.Item className="carousel__items cardContainer">
+            <Carousel.Item>
               {pair.map((card) => (
+                <div className='carousel__item'>
                 <DailyCard card={card} />
+                </div>
               ))}
             </Carousel.Item>
           ))}
-        </Carousel>
-      </div>
+      </Carousel>
     </div>
   );
 }
