@@ -24,18 +24,27 @@ export default function ControlledCarousel() {
       });
   }, []);
 
+  const nodePairs = cardList.reduce((result, value, index, array) => {
+    if (index % 2 === 0) result.push(array.slice(index, index + 2));
+    return result;
+  }, []);
+
   return (
     <div id="news_section">
       <h1 className="about__title" id="about_section">
         Novedades
-      </h1> 
-        <Carousel index={2} activeIndex={index} onSelect={handleSelect}>
-          {cardList.map((card) => (
-            <Carousel.Item className='carousel__items'>
-              <DailyCard card={card}/>
+      </h1>
+      <div className="carouselContainer">
+        <Carousel className="Carousel" activeIndex={index} onSelect={handleSelect}>
+          {nodePairs.map((pair) => (
+            <Carousel.Item className="carousel__items cardContainer">
+              {pair.map((card) => (
+                <DailyCard card={card} />
+              ))}
             </Carousel.Item>
           ))}
         </Carousel>
+      </div>
     </div>
   );
 }
