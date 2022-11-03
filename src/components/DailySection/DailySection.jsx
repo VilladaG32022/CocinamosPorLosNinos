@@ -4,7 +4,7 @@ import ControlledCarousel from '../Carousel/ControlledCarousel';
 
 export default function DailySection() {
   return (
-    <section className="section" id="novedades">
+    <section className="daily__section" id="novedades">
       <ControlledCarousel />;
     </section>
   );

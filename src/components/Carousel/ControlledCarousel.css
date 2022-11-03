@@ -1,55 +1,28 @@
-.a {
-  display: inline;
+.daily__title{
+  text-align: center;
+  margin-top: 60px !important;
+  margin-bottom: 60px;
+  color: var(--button-color-alt);
+  font-size: 50px;
+  font-weight: var(--font-bold);
 }
 
-.Carousel{
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  
-}
-
-.cardContainer {
-  display: flex;
-}
-
-.carousel-control-prev {
-  width: 50px !important;
-  margin-left: 12px;
-}
-
-.carousel-control-prev-icon {
-  background-color: #77b3b8;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-
-.carousel-control-next {
-  width: 50px !important;
-  margin-right: 12px;
-}
-
-.carousel-control-next-icon {
-  background-color: #77b3b8;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-
-.carousel__items {
+.carousel__item{
   display: inline-block;
+  width: 33.3%;
 }
 
-.a {
-  display: inline;
+.carousel__container{
+  padding-bottom: 90px;
 }
 
-.card__container {
-  display: flex;
+.carousel-indicators > button{
+  background-color: var(--second-color) !important;
 }
 
 .carousel-control-prev {
   width: 50px !important;
-  margin-left: 12px;
+  margin-left: 20px;
 }
 
 .carousel-control-prev-icon {
@@ -60,7 +33,7 @@
 
 .carousel-control-next {
   width: 50px !important;
-  margin-right: 12px;
+  margin-right: 20px;
 }
 
 .carousel-control-next-icon {

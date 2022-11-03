@@ -113,3 +113,8 @@
   border-radius: 0 0 6px 6px;
   font-size: 24px;
 }
+
+button:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
