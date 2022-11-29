@@ -23,9 +23,9 @@ export default function NavScroll() {
             <Nav.Link className="nav__link" href={redirects.donate}>
               Donaciones
             </Nav.Link>
-            <Nav.Link className="nav__link" href={redirects.news}>
+{/*             <Nav.Link className="nav__link" href={redirects.news}>
               Novedades
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link className="nav__link" href={redirects.volunteer}>
               Voluntariado
             </Nav.Link>
