@@ -36,7 +36,7 @@ export default function ControlledCarousel() {
       </h1>
         <Carousel className="carousel__container" activeIndex={index} onSelect={handleSelect}>
           {nodePairs.map((pair) => (
-            <Carousel.Item>
+            <Carousel.Item className='help'>
               {pair.map((card) => (
                 <div className='carousel__item'>
                 <DailyCard card={card} />
