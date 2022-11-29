@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import { Form, Card, Button, Alert } from 'react-bootstrap';
+import { Form, Card, Button} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Axios from 'axios';
 
@@ -68,7 +68,7 @@ const UserDetails = () => {
         .catch((err) => {   
           console.log('Invalid Form', err);       
           console.log('Invalid Email', err.response.data.email);
-          alert('Controla tus datos. Puede que este mail ya este registrado', err.response.data.email);
+          alert('Controla tus datos. Puede que el mail ya este registrado o no hayas ingresado un dato correctamente', err.response.data.email);
           e.preventDefault();
         });
     }
